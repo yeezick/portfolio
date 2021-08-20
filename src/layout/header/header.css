@@ -1,16 +1,60 @@
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   height: 4rem;
+  width: 100vw;
+  z-index: 3;
 
   background-color: black;
   border-bottom: 1px solid white;
 }
-.nav-left, .nav-right * {
+.nav-left,
+.nav-right * {
   color: white;
   text-decoration: none;
 }
-.nav-left  * {
+.nav-left {
+  padding-left: 30px;
+}
+.nav-left * {
   display: inline;
+}
+
+.mobile-nav-right {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+.mobile-nav-right * {
+  margin: 2rem 0;
+}
+.nav-menu {
+  color: white;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  z-index: 5;
+}
+.nav-link {
+  color: white;
+}
+
+
+@media only screen and (min-width: 1025px) {
+  .nav-menu {
+    display: none;
+  }
+  .mobile-nav-right {
+    display: none;
+  }
 }
