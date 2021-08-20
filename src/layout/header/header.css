@@ -16,9 +16,16 @@
 }
 .nav-left {
   padding-left: 30px;
+  display: flex; 
+  align-items: center;
+}
+.nav-react {
+  animation: rotateReact infinite 15s linear;
+  color: #61dafb;
 }
 .nav-left * {
   display: inline;
+  margin-right: 1rem;
 }
 
 .mobile-nav-right {
@@ -47,6 +54,15 @@
 }
 .nav-link {
   color: white;
+}
+
+@keyframes rotateReact {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 

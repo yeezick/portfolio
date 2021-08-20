@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaReact } from "react-icons/fa";
 import "./header.css";
 
 const Header = () => {
@@ -40,7 +40,7 @@ const Header = () => {
         />
       )}
       <Link className="nav-left" to="/">
-        <img src="" alt="react" />
+        <FaReact size={50} className="nav-react"/>
         <h1 className="nav-title">Erick Manrique</h1>
       </Link>
 
