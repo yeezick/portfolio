@@ -1,0 +1,21 @@
+
+.footer {
+  display: flex;
+  flex-flow: column; 
+  justify-content: space-between;;
+  padding: 0.5rem 2.5rem;
+
+  border-top: 1.75px solid white;
+  text-align: center;
+}
+.creator, .network * {
+  color: white;
+}
+.footer-title {
+  text-align: center;
+  margin: 1rem 0;
+}
+.footer-links {
+  display: flex; 
+  justify-content: space-evenly;
+}

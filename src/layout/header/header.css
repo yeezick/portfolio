@@ -16,7 +16,7 @@
 }
 .nav-left {
   padding-left: 30px;
-  display: flex; 
+  display: flex;
   align-items: center;
 }
 .nav-react {
@@ -64,7 +64,6 @@
     transform: rotate(360deg);
   }
 }
-
 
 @media only screen and (min-width: 1025px) {
   .nav-menu {
