@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+
+  background-color: black;
+  border-bottom: 1px solid white;
+}
+.nav-left, .nav-right * {
+  color: white;
+  text-decoration: none;
+}
+.nav-left  * {
+  display: inline;
+}
