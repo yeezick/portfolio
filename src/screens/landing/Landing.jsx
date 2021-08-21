@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import  {BsFillPersonLinesFill} from "react-icons/bs"
+import {FaCode} from "react-icons/fa" //close contender FaLaptopCode
 import "./landing.css";
 
 const Landing = () => {
@@ -17,10 +19,10 @@ const Landing = () => {
           <div className="interior-ring">
             <div className="interior-orbit">
               <Link to="/portfolio" className="interior-circle">
-                Work
+                <BsFillPersonLinesFill size={30}/>
               </Link>
               <Link to="/about" className="interior-circle">
-               About
+               <FaCode size={40}/>
               </Link>
             </div>
           </div>

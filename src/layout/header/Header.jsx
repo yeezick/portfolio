@@ -5,13 +5,16 @@ import "./header.css";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [mobileNav, setMobileNav] = useState(true);
+  const [desktop, setDesktop] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 425) {
         setShowMenu(false);
-        setMobileNav(false);
+        setDesktop(true);
+      }
+      if (window.innerWidth < 1024) {
+        setDesktop(false)
       }
     };
     window.addEventListener("resize", handleResize);
@@ -44,9 +47,9 @@ const Header = () => {
         <h1 className="nav-title">Erick Manrique</h1>
       </Link>
 
-        {!mobileNav ? (
+        {desktop ? (
           <div className="nav-right">
-            <Link className="nav-link" to="/about">
+            <Link className="nav-link" to="/about" >
               About
             </Link>
             <Link className="nav-link" to="/portfolio">
@@ -60,13 +63,19 @@ const Header = () => {
           <>
             {showMenu ? (
               <div className="mobile-nav-right">
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link" to="/about" onClick={() => {
+            setShowMenu(!showMenu);
+          }}>
                   About
                 </Link>
-                <Link className="nav-link" to="/portfolio">
+                <Link className="nav-link" to="/portfolio" onClick={() => {
+            setShowMenu(!showMenu);
+          }}>
                   Portfolio
                 </Link>
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link" to="/about" onClick={() => {
+            setShowMenu(!showMenu);
+          }}>
                   About
                 </Link>
               </div>
