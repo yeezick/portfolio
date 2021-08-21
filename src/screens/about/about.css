@@ -1,0 +1,50 @@
+.about{
+  color: white;
+  margin: 2rem;
+}
+.about-landing{
+  height: 50vh;
+}
+.about-landing-img {
+
+}
+/* move the next styling to a more general css sheet */
+.section-title {
+text-align: center;
+margin: 2rem 0 0;
+}
+.section-subtitle {
+text-align: center;
+margin-bottom: 2rem;
+}
+
+
+.about-story {
+
+}
+/* can about-story and about-landing image stylings be rendered without appending classnames? */
+.about-story-img {
+
+}
+.about-story-text {
+
+}
+.about-goals {
+
+}
+.goals-list {
+
+}
+.goals-title {
+
+}
+
+.about-glimpse {
+
+}
+.about-farewell {
+
+}
+.about-farewell-text {
+
+}

@@ -32,33 +32,6 @@
   z-index: -1;
   animation: 30s rotate-exterior linear infinite;
 }
-.interior-ring {
-  width: 55vw;
-  height: 55vw;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.interior-orbit {
-  animation: 10s rotate-interior linear infinite;
-  height: 55vw;
-  width: 55vw;
-  border-radius: 100%;
-  position: relative;
-}
-
-.nucleus {
-  background-color: white;
-  height: 30vw;
-  width: 30vw;
-  position: absolute;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .exterior-circle,
 .interior-circle {
@@ -110,6 +83,30 @@
   left: 15%;
 }
 
+.interior-ring {
+  width: 55vw;
+  height: 55vw;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.interior-orbit {
+  animation: 10s rotate-interior linear infinite;
+  height: 55vw;
+  width: 55vw;
+  border-radius: 100%;
+  position: relative;
+}
+.interior-circle {
+  text-align: center;
+  padding: 1rem .3rem;
+}
+.interior-circle * {
+  /* text-decoration: none; */
+  color: black;
+}
 .interior-circle:nth-of-type(1) {
   top: 35%;
   left: -10%;
@@ -118,6 +115,18 @@
   top: 35%;
   right: -10%;
 }
+
+.nucleus {
+  background-color: white;
+  height: 30vw;
+  width: 30vw;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 @keyframes rotate-exterior {
   from {

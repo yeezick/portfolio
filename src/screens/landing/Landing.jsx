@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./landing.css";
 
 const Landing = () => {
@@ -13,11 +14,14 @@ const Landing = () => {
 
       <div className="atom">
         <div className="exterior-ring">
-          
           <div className="interior-ring">
             <div className="interior-orbit">
-              <div className="interior-circle"></div>
-              <div className="interior-circle"></div>
+              <Link to="/portfolio" className="interior-circle">
+                Work
+              </Link>
+              <Link to="/about" className="interior-circle">
+               About
+              </Link>
             </div>
           </div>
 
@@ -25,10 +29,10 @@ const Landing = () => {
           <div className="exterior-circle"></div>
           <div className="exterior-circle"></div>
           <div className="exterior-circle"></div>
-          <div className="exterior-circle">About</div>
           <div className="exterior-circle"></div>
           <div className="exterior-circle"></div>
-          <div className="exterior-circle">Work</div>
+          <div className="exterior-circle"></div>
+          <div className="exterior-circle"></div>
           <div className="nucleus">MyPic</div>
         </div>
 

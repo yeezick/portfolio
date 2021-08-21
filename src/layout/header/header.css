@@ -4,7 +4,7 @@
   align-items: center;
   height: 4rem;
   width: 100vw;
-  z-index: 3;
+  z-index: 75;
 
   background-color: black;
   border-bottom: 1px solid white;
@@ -40,6 +40,7 @@
   position: fixed;
   top: 0px;
   left: 0px;
+  z-index: 79;
 }
 .mobile-nav-right * {
   margin: 2rem 0;
@@ -50,7 +51,7 @@
   right: 15px;
   top: 15px;
   cursor: pointer;
-  z-index: 5;
+  z-index: 80;;
 }
 .nav-link {
   color: white;
