@@ -1,0 +1,137 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 75vh;
+  color: white;
+  text-align: center;
+}
+.intro * {
+  font-size: 2.25rem;
+}
+.atom {
+  height: 60vh;
+}
+
+.atom * {
+  background-color: white;
+}
+.exterior-ring,
+.interior-ring,
+.interior-orbit,
+.nucleus {
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px solid white;
+  margin: auto;
+}
+.exterior-ring {
+  width: 80vw;
+  height: 80vw;
+  position: relative;
+  z-index: -1;
+  animation: 30s rotate-exterior linear infinite;
+}
+.interior-ring {
+  width: 55vw;
+  height: 55vw;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.interior-orbit {
+  animation: 10s rotate-interior linear infinite;
+  height: 55vw;
+  width: 55vw;
+  border-radius: 100%;
+  position: relative;
+}
+
+.nucleus {
+  background-color: white;
+  height: 30vw;
+  width: 30vw;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.exterior-circle,
+.interior-circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: white;
+}
+.exterior-circle {
+  width: 33px;
+  height: 33px;
+}
+/* .exterior-circle:nth-of-type(0) {
+  background-color: gold;
+  top: 25%;
+  right: 15%;
+} */
+.exterior-circle:nth-of-type(2) {
+  top: 20%;
+  right: 0;
+}
+.exterior-circle:nth-of-type(3) {
+  top: 3%;
+  right: 16%;
+}
+.exterior-circle:nth-of-type(4) {
+  top: 67%;
+  right: 0;
+}
+.exterior-circle:nth-of-type(5) {
+  top: 83%;
+  right: 13%;
+}
+.exterior-circle:nth-of-type(6) {
+  top: 85%;
+  left: 15%;
+}
+.exterior-circle:nth-of-type(7) {
+  top: 67%;
+  left: 0%;
+}
+.exterior-circle:nth-of-type(8) {
+  top: 20%;
+  left: 0;
+}
+.exterior-circle:nth-of-type(9) {
+  top: 5%;
+  left: 15%;
+}
+
+.interior-circle:nth-of-type(1) {
+  top: 35%;
+  left: -10%;
+}
+.interior-circle:nth-of-type(2) {
+  top: 35%;
+  right: -10%;
+}
+
+@keyframes rotate-exterior {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-interior {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
