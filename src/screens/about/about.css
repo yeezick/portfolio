@@ -1,6 +1,7 @@
 .about{
   color: white;
-  margin: 2rem;
+  max-width: 70vw;
+  margin: auto;
 }
 .about-landing{
   height: 50vh;
@@ -8,16 +9,6 @@
 .about-landing-img {
 
 }
-/* move the next styling to a more general css sheet */
-.section-title {
-text-align: center;
-margin: 2rem 0 0;
-}
-.section-subtitle {
-text-align: center;
-margin-bottom: 2rem;
-}
-
 
 .about-story {
 

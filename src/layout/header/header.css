@@ -5,6 +5,8 @@
   height: 4rem;
   width: 100vw;
   z-index: 75;
+  position: sticky;
+  top: 0;
 
   background-color: black;
   border-bottom: 1px solid white;
@@ -72,5 +74,30 @@
   }
   .mobile-nav-right {
     display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;;
+  }
+  .nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 35vw;
+  } 
+   .nav-link {
+    padding: 0 2rem;
+    display: flex;
+    height: 50%;
+    align-items: center;
+    transition: 1s;
+  }
+  .nav-right *:hover{
+    height: 100%;
+    background-color: white;
+    color: black;
+    font-size: 1.3rem;
+
   }
 }

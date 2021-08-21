@@ -58,7 +58,7 @@ const Header = () => {
           <Link className="nav-link" to="/about">
             About
           </Link>
-        </div>
+        </div> 
       ) : (
         <>
           {showMenu ? (
