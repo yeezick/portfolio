@@ -96,6 +96,7 @@
   .nav-right *:hover{
     height: 100%;
     background-color: white;
+    border-radius: 2px;
     color: black;
     font-size: 1.3rem;
 

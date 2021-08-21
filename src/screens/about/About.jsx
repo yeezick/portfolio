@@ -14,7 +14,7 @@ const About = () => {
       <section className="about-story">
         <h2 className="section-title">Long Story Short</h2>
         <img className="about-story-img" src="" alt="map of my travel" />
-        <p className="about-story-text">
+        <p className="section-text">
           I am an argentine native, residing in the US for quite literally 95%
           of my life.
           <br />
@@ -76,7 +76,7 @@ const About = () => {
           <i>exclamation</i> -
           used to express good wishes on parting.
         </h3>
-        <p classname="about-farewell-text">
+        <p className="section-text">
           While goodbyes are never easy, I’m also not one to depart without a
           thank you. Whether it was for your time or your knowledge, thank you
           for taking the time to get to know me a little deeper. I would love to

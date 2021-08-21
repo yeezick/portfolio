@@ -17,25 +17,25 @@
 .about-story-img {
 
 }
-.about-story-text {
-
-}
 .about-goals {
 
 }
-.goals-list {
-
-}
 .goals-title {
-
+ text-align: ;
+ margin: 1rem auto;
+ text-decoration: underline;
+ font-size: 1.4rem;
+}
+.goals-list ul {
+margin: 0 0 0 3rem;
+}
+.goals-list li {
+  line-height: 2;
 }
 
 .about-glimpse {
 
 }
 .about-farewell {
-
-}
-.about-farewell-text {
 
 }
