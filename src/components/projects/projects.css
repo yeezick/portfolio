@@ -13,6 +13,7 @@ padding: 1rem;
 .project-img {
   width: 60vw;
   border-radius: 2px;
+  border: 2px solid black;
 }
 .project-desc {
   height: 35vh;
