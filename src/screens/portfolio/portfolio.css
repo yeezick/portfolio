@@ -1,16 +1,19 @@
-.portfolio {
-  margin: 2rem;
-  color: white;
-}
-
 .portfolio-landing {
 
 }
+.portfolio-intro {
+  text-align:center;
+  height: 40vh;
+  display: flex; 
+  flex-flow: column;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
 .portfolio-title {
-
+  font-size: 3rem;
 }
 .portfolio-subtitle {
-
+font-size: 2rem;
 }
 
 

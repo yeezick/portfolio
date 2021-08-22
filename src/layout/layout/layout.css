@@ -2,17 +2,34 @@
   max-width: 100vw;
   margin-top: 4rem;
 }
+.screen {
+  color: white;
+  max-width: 70vw;
+  margin: auto;
+}
 .section-title {
   max-width: 70vw;
-  margin: 2rem auto .5rem;
+  margin: 2rem auto 0.5rem;
   font-size: 2rem;
-  text-align:center;
+  text-align: center;
 }
 /* move the next styling to a more general css sheet */
 .section-subtitle {
-text-align: center;
-margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 .section-text {
+  line-height: 2;
+}
+.list-title {
+  /* text-align: ; */
+  margin: 1rem auto;
+  text-decoration: underline;
+  font-size: 1.4rem;
+}
+.list ul {
+  margin: 0 0 0 3rem;
+}
+.list li {
   line-height: 2;
 }

@@ -3,7 +3,7 @@ import "./about.css";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="screen">
       <section className="about-landing">
         <img className="about-landing-img" src="" alt="me" />
         <p className="section-title">
@@ -34,8 +34,8 @@ const About = () => {
       <section className="about-goals">
         <h2 className="section-title">I have goals</h2>
         {/* <h3 className="section-subtitle">They tend to be overambitious</h3> */}
-        <div className="goals-list">
-          <h3 className="goals-title">Short-Term</h3>
+        <div className="list">
+          <h3 className="list-title">Short-Term</h3>
           <ul>
             <li>
               Master software development and open doors into software
@@ -49,8 +49,8 @@ const About = () => {
             </li>
           </ul>
         </div>
-        <div className="goals-list">
-          <h3 className="goals-title">Long-Term</h3>
+        <div className="list">
+          <h3 className="list-title">Long-Term</h3>
           <ul>
             <li>Help my family reach financial independence</li>
             <li>

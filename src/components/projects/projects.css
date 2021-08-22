@@ -1,0 +1,39 @@
+.project {
+padding: 1rem;
+}
+.project-item {
+  margin: 2rem 0;
+  padding: 1rem  1.25rem;
+  
+  background-color: #FFF8E7;
+  color: black;
+  border-radius: 3px;
+  text-align: center;
+}
+.project-img {
+  width: 60vw;
+  border-radius: 2px;
+}
+.project-desc {
+  height: 35vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+.project-title {
+  text-decoration: underline;
+}
+.project-text {
+  text-align: left;
+}
+.project-techs {
+  font-style: italic;
+  font-size: 0.9rem;
+  text-align: right;
+}
+.project-desc a {
+  text-align: right;
+}
+.project-button {
+width: 25vw;
+}
