@@ -1,11 +1,11 @@
-// import {Layout} from "/layout/layout"
+
 import "./about.css";
 
 const About = () => {
   return (
     <div className="screen">
       <section className="about-landing">
-        <img className="about-landing-img" src="" alt="me" />
+        {/* <img className="about-landing-img" src={resPic} alt="me" /> */}
         <p className="section-title">
           It's <i>my</i> pleasure to meet you.
         </p>

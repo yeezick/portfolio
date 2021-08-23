@@ -1,9 +1,9 @@
 
 .about-landing{
-  height: 50vh;
+  /* height: 50vh; */
 }
 .about-landing-img {
-
+width: 60vw;
 }
 
 .about-story {

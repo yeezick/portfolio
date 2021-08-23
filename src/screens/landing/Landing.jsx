@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+
 import  {BsFillPersonLinesFill} from "react-icons/bs"
 import {FaCode} from "react-icons/fa" //close contender FaLaptopCode
+import resPic from "../../images/resPic.jpeg"
 import "./landing.css";
 
 const Landing = () => {
@@ -35,7 +37,7 @@ const Landing = () => {
           <div className="exterior-circle"></div>
           <div className="exterior-circle"></div>
           <div className="exterior-circle"></div>
-          <div className="nucleus">MyPic</div>
+          <img src={resPic} alt="myself" className="nucleus"/>
         </div>
 
         {/* <div className="interior-ring">
