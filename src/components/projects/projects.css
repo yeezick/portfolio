@@ -72,3 +72,9 @@ padding: 1rem;
   background: black;
   color: #FFF8E7
 }
+
+@media screen and (min-width: 1000px) {
+  .project-img {
+    width: 45vw;
+  }
+}

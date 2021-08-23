@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway&display=swap');
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+}
+p, li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .layout-children {
   max-width: 100vw;
   margin-top: 4rem;
@@ -34,10 +44,21 @@ align-items: center;
 border-right: 2px solid white;
   font-size: 1.4rem;
   width: fit-content;
+
 }
 .list ul {
   margin: 0 0 0 2rem;
 }
 .list li {
   line-height: 2.5;
+}
+
+@media screen and (min-width: 1000px) {
+  .screen {
+    max-width: 50vw; /* may need to edit once background cards are added */
+  }
+  .list-title {
+      padding: 0;
+  margin: 0 10vw 0 0;
+  }
 }

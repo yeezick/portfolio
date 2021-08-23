@@ -19,3 +19,9 @@
   display: flex; 
   justify-content: space-evenly;
 }
+
+@media screen and (min-width: 1000px) {
+  .footer-title {
+    font-size: 20px;
+  }
+}
