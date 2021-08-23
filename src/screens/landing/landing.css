@@ -9,15 +9,27 @@
 .intro * {
   font-size: 2.25rem;
 }
+
+.atom-wrapper {
+  display: flex;
+  height: 90vh;
+  color: white;
+  justify-content: space-evenly;
+  /* align-items: ; */
+}
 .atom {
-  height: 60vh;
+  margin: 0 auto;
   max-width: 400px;
   overflow:visible
 }
-
 .atom * {
-  background-color: white;
+  /* background-color: white; */
 }
+.atom-section {
+  color: white;
+  align-self: center;
+}
+
 .exterior-ring,
 .interior-ring,
 .interior-orbit,
@@ -25,7 +37,7 @@
   border-radius: 100%;
   background-color: transparent;
   border: 1px solid white;
-  margin: auto;
+  /* margin: auto; */
 }
 .exterior-ring {
   width: 300px;
@@ -160,34 +172,14 @@
   }
 }
 
-@media screen and (min-width: 1000px) {
-  /* .atom  {
-    max-width: 60vw;
-    height: 40vh;
-  }
-  .exterior-ring {
-    width: 30vw;
-    height: 30vw;
-  } */
+@media screen and (min-width: 800px) {
   .atom {
-    margin: 100px auto;
+    margin: auto 0;
+    max-width: 50vw;
     transform: scale(1.5);
   }
-  
-}
-/* .exterior-ring {
-  width: 80vw;
-  height: 80vw;
-  position: relative;
-  z-index: -1;
-  animation: 30s rotate-exterior linear infinite;
-}
+ .atom-active-about .interior-orbit, .atom-active-about .exterior-ring , .atom-active-portfolio .interior-orbit, .atom-active-portfolio .exterior-ring  {
+  animation:none;
+ }
 
-.exterior-circle,
-.interior-circle {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  background-color: white;
-} */
+}

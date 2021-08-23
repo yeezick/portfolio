@@ -79,7 +79,19 @@ padding: 1rem;
 }
 
 @media screen and (min-width: 1000px) {
+  .projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .project-item {
+    width: 20vw;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .project-img {
-    width: 45vw;
+    width: 100%;
   }
 }

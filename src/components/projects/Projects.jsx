@@ -33,6 +33,15 @@ const Projects = () => {
           >
             <button className="project-button"><span>Visit Site</span></button>
           </a>
+          <a
+                href="https://github.com/yeezick/iNetwork"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="project-button">
+                  <span>Visit GitHub</span>
+                </button>
+              </a>
         </div>
       </div>
 
@@ -58,6 +67,15 @@ const Projects = () => {
           >
             <button className="project-button"><span>Visit Site</span></button>
           </a>
+          <a
+                href="https://github.com/yeezick/home.io-v2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="project-button">
+                  <span>Visit GitHub</span>
+                </button>
+              </a>
         </div>
       </div>
 
@@ -83,6 +101,13 @@ const Projects = () => {
             rel="noreferrer"
           >
             <button className="project-button"><span>Visit Site</span></button>
+          </a>
+          <a
+            href="https://github.com/jessa-clark/dignified-winers"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="project-button"><span>Visit GitHub</span></button>
           </a>
         </div>
       </div>
