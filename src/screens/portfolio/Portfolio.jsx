@@ -46,7 +46,7 @@ const Portfolio = () => {
 
       <section className="portfolio-skills">
         <h2 className="section-title">SKILLS</h2>
-        <div className="skills-technical">
+        <div className="skills-list">
           <h3 className="list-title skills-title">TECHNICAL</h3>
           <div className="technical-icons">
             <div className="technical-single">
@@ -96,7 +96,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="list skills-attributes">
+        <div className="list skills-list">
           <h3 className="list-title skills-title">ATTRIBUTES</h3>
           <ul>
             <li>Team-Oriented Leadership</li>

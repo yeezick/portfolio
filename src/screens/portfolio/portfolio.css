@@ -30,8 +30,9 @@ font-size: 2rem;
   text-decoration:none;
 border-right: 2px solid white;
 }
-.skills-technical {
-
+.skills-list {
+display: flex;
+align-items: center;
 }
 .technical-icons {
   margin: auto;
