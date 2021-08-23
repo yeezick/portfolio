@@ -1,4 +1,4 @@
-
+import NasaPod from "../../components/NasaPod/NasaPod"
 import "./about.css";
 
 const About = () => {
@@ -87,11 +87,12 @@ const About = () => {
           my heart goes out to the brave people and fellow admirers that
           dedicate their lives to satiating the curiosity of the great beyond.
           <br />
-          Without further ado, I share with you NASA’s Astronomy Picture of the
-          Day, one of my personal favorite API’s.
+          Without further ado, I share with you one of my personal favorite API’s..
         </p>
-        <h2>aren't u glad u just made a cozy little component already rendering this data? :^D</h2>
-      </section>
+        <h3 className="section-title">NASA’s Astronomy Picture of the
+          Day</h3>
+<NasaPod/>  
+    </section>
     </div>
   );
 };

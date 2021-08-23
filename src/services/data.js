@@ -28,9 +28,10 @@ export const getCrypto = async () => {
 }
 
 // todo: hide api key
-export const getCosmic = async () => {
+export const getNasaPod = async () => {
   try {
     const response = await axios.get("https://api.nasa.gov/planetary/apod?api_key=3ZflFQUbUgnxtomWnbN6ROEMWjeMA89vRGtW9Vdv")
+    console.log(response)
     return response.data
   } catch (error) {
     console.log(error)
