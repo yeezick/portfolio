@@ -25,7 +25,10 @@ font-size: 2rem;
 
 }
 .skills-title {
-  
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-decoration:none;
+border-right: 2px solid white;
 }
 .skills-technical {
 

@@ -31,7 +31,7 @@ const Projects = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="project-button">Visit Site</button>
+            <button className="project-button"><span>Visit Site</span></button>
           </a>
         </div>
       </div>
@@ -56,7 +56,7 @@ const Projects = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="project-button">Visit Site</button>
+            <button className="project-button"><span>Visit Site</span></button>
           </a>
         </div>
       </div>
@@ -82,7 +82,7 @@ const Projects = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="project-button">Visit Site</button>
+            <button className="project-button"><span>Visit Site</span></button>
           </a>
         </div>
       </div>

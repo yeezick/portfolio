@@ -47,7 +47,7 @@ const Portfolio = () => {
       <section className="portfolio-skills">
         <h2 className="section-title">SKILLS</h2>
         <div className="skills-technical">
-          <h3 className="list-title">TECHNICAL</h3>
+          <h3 className="list-title skills-title">TECHNICAL</h3>
           <div className="technical-icons">
             <div className="technical-single">
               <SiJquery size={40} color="#78cff5" />
@@ -96,8 +96,8 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="list">
-          <h3 className="list-title">ATTRIBUTES</h3>
+        <div className="list skills-attributes">
+          <h3 className="list-title skills-title">ATTRIBUTES</h3>
           <ul>
             <li>Team-Oriented Leadership</li>
             <li>Problem Solving</li>
@@ -138,7 +138,7 @@ const Portfolio = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="project-button">Visit Site</button>
+            <button className="project-button"><span>Visit Site</span></button>
           </a>
         </div>
       </div>
@@ -166,7 +166,7 @@ const Portfolio = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="project-button">Visit Site</button>
+            <button className="project-button"><span>Visit Site</span></button>
           </a>
         </div>
       </div>
