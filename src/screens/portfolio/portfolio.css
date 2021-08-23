@@ -33,6 +33,9 @@ border-right: 2px solid white;
 .skills-list {
 display: flex;
 align-items: center;
+} 
+.skills-list ul li {
+  line-height: 2.5;
 }
 .technical-icons {
   margin: auto;

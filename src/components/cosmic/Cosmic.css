@@ -1,0 +1,25 @@
+.cosmic {
+  padding: 2rem 0;
+background-color: #FFF8E7;
+border-radius: 4px;
+color: #16263E;
+text-align: center;
+}
+.cosmic-title {
+  margin-bottom: 1rem;
+  
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+.cosmic-picture {
+  width: 75vw;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.cosmic-text, .cosmic-courtesy {
+  padding: 1rem;
+  text-align: left;
+}
+.cosmic-courtesy > a {
+  color:#16263E;
+}
