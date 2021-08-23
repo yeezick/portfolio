@@ -4,16 +4,9 @@ import "./about.css";
 const About = () => {
   return (
     <div className="screen">
-      <section className="about-landing">
-        {/* <img className="about-landing-img" src={resPic} alt="me" /> */}
-        <p className="section-title">
-          It's <i>my</i> pleasure to meet you.
-        </p>
-      </section>
+      <div className="about-landing-img"></div>
 
-      <section className="about-story">
-        <h2 className="section-title">Long Story Short</h2>
-        <img className="about-story-img" src="" alt="map of my travel" />
+      <section className="about-story">        <h2 className="section-title">Long Story Short</h2>
         <p className="section-text">
           I am an argentine native, residing in the US for quite literally 95%
           of my life.
@@ -33,7 +26,7 @@ const About = () => {
 
       <section className="about-goals">
         <h2 className="section-title">I have goals</h2>
-        {/* <h3 className="section-subtitle">They tend to be overambitious</h3> */}
+        <p style={{textAlign:"center"}}>(They tend to be ambitious)</p>
         <div className="list">
           <h3 className="list-title">Short-Term</h3>
           <ul>
