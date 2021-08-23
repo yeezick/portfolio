@@ -1,10 +1,13 @@
 import NasaPod from "../../components/NasaPod/NasaPod"
+import map from "../../images/map-zoom-out.png"
 import "./about.css";
 
 const About = () => {
   return (
     <div className="screen">
-      <div className="about-landing-img"></div>
+      <div className="about-landing-img">
+        <img src={map} alt="my travels" />
+      </div>
 
       <section className="about-story">        <h2 className="section-title">Long Story Short</h2>
         <p className="section-text">
@@ -28,7 +31,7 @@ const About = () => {
         <h2 className="section-title">I have goals</h2>
         <p style={{textAlign:"center"}}>(They tend to be ambitious)</p>
         <div className="list">
-          <h3 className="list-title">Short-Term</h3>
+          <h3 className="list-title">SHORT-TERM</h3>
           <ul>
             <li>
               Master software development and open doors into software
@@ -43,7 +46,7 @@ const About = () => {
           </ul>
         </div>
         <div className="list">
-          <h3 className="list-title">Long-Term</h3>
+          <h3 className="list-title">LONG-TERM</h3>
           <ul>
             <li>Help my family reach financial independence</li>
             <li>

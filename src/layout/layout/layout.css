@@ -13,7 +13,6 @@
   font-size: 2rem;
   text-align: center;
 }
-/* move the next styling to a more general css sheet */
 .section-subtitle {
   text-align: center;
   margin-bottom: 2rem;
@@ -21,6 +20,7 @@
 .section-text {
   line-height: 2;
 }
+
 .list {
   margin: 2rem 0;
   display: flex;
@@ -33,6 +33,7 @@ align-items: center;
   text-decoration:none;
 border-right: 2px solid white;
   font-size: 1.4rem;
+  width: fit-content;
 }
 .list ul {
   margin: 0 0 0 2rem;

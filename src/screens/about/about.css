@@ -1,9 +1,14 @@
 .about-landing-img {
-background: url("../../images/map-zoom-out.png") no-repeat center;
-background-size:cover;
 border-radius: 2px;
-height: 50vh;
-transform: scale(1.1)
+height: fit-content;
+transform: scale(1.1);
+text-align: center;
+margin: 5rem 0;
+}
+.about-landing-img img {
+  width: 60vw;
+  border-radius: 2px;
+
 }
 
 .about-story {
@@ -20,4 +25,9 @@ transform: scale(1.1)
 }
 .about-farewell {
 
+}
+@media screen and (min-width: 1000px) {
+  .about-landing-img img {
+    width: fit-content;
+  }
 }
