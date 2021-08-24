@@ -7,6 +7,8 @@ import Portfolio from "./screens/portfolio/Portfolio"
 import "./App.css";
 
 function App() {
+
+
   return (
     <Layout className="App">
      <Route exact path="/">
