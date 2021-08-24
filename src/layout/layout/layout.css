@@ -55,7 +55,7 @@ border-right: 2px solid white;
 
 @media screen and (min-width: 1000px) {
   .screen {
-    max-width: 50vw; /* may need to edit once background cards are added */
+    max-width: 60vw; /* may need to edit once background cards are added */
   }
   .list-title {
       padding: 0;
