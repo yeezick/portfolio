@@ -1,8 +1,14 @@
+import {useEffect} from "react"
 import NasaPod from "../../components/NasaPod/NasaPod"
 import map from "../../images/map-zoom-out.png"
 import "./about.css";
 
 const About = () => {
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+
   return (
     <div className="screen">
       <div className="about-landing-img">
