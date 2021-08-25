@@ -10,8 +10,8 @@ const Landing = () => {
   const [toggleDetail, setToggleDetail] = useState(0);
 
   useEffect(() => {
-    window.scrollTo(0,0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleAtomClick = () => {
     console.log(toggleDetail);
@@ -22,34 +22,58 @@ const Landing = () => {
     }
   };
 
+  const Tap = () => {
+    return (
+      <div className="atom-section">
+        <h3 className="section-title">Tap the atom to view more.</h3>
+      </div>
+    );
+  };
+
   const About = () => {
     return (
       <div className="atom-section">
-        <h3 classname="section-title">About Me</h3>
+        <h3 className="section-title">About Me</h3>
         <p className="section-text">
-          about description
+          I'm a 22 year old developer, with a huge passion for sicence and
+          astronomy. It's apparent to me that being on the cutting edge of
+          technology is equivalent to contributing to humanity's evolution.
         </p>
+        <Link to="/about">
+          <button className="project-button">
+            <span>Find Out More</span>
+          </button>
+        </Link>
       </div>
-    )
-  }
+    );
+  };
 
   const Portfolio = () => {
     return (
       <div className="atom-section">
-        <h3 classname="section-title">Portfolio</h3>
+        <h3 className="section-title">Portfolio</h3>
         <p className="section-text">
-          portfolio description
+          While I specialize working with JavaScript and the MERN stack, my
+          exposure with Ruby on Rails has given me the insight on how the
+          concepts behind languages and frameworks trully transfer. It allows me
+          the confidence to immerge myself into uncomfortable territory with an
+          everlasting passion to learn and excel.
         </p>
+        <Link to="/portfolio">
+          <button className="project-button">
+            <span>See My Work</span>
+          </button>
+        </Link>
       </div>
-    )
-  }
+    );
+  };
 
   return (
-    <div>
+    <div className="landing">
       <section className="intro app-section">
         <p className="intro-hello">Hello, I'm Erick,</p>
         <p className="intro-me">
-           a <span className="intro-span"> </span>
+          <span className="intro-span"> </span>
         </p>
         {/* <p className="intro-options">What would you like to see first?</p> */}
       </section>
@@ -90,10 +114,13 @@ const Landing = () => {
           </div>
         </div>
         <div className="atom-content">
-          {toggleDetail === 0 ? null : toggleDetail === 1 ? <About/> : <Portfolio/> }
+          {toggleDetail === 0 ? <Tap/> : toggleDetail === 1 ? (
+            <About />
+          ) : (
+            <Portfolio />
+          )}
         </div>
       </section>
-
     </div>
   );
 };

@@ -1,3 +1,6 @@
+.landing {
+  height: fit-content
+}
 .intro {
   display: flex;
   flex-direction: column;
@@ -10,73 +13,29 @@
   font-size: 2.25rem;
 }
 .intro-span::before {
-  content: "Software Engineer";
-  animation: changingText infinite 10s;
+  content: "";
+  animation: changingText infinite 5s;
+  animation-direction: alternate;
   padding-left: 10px;
 }
 @keyframes changingText {
-  0%{
-    content: "Software Engineer"
-  }
-3% {
-  content: "Software Engin"
-}
-5% {
-  content: "Software"
-}
-10% {
-  content: "Soft"
-}
-15% {
-  content:""
+0% {
+  content: "Developer"
 }
 20% {
-  content: "Pro"
-}
-25% {
-  content:"Problem "
-}
-30% {
-  content:"Problem Sol"
-}
-35% {
-  content:"Problem Solver"
+  content: "Problem Solver"
 }
 40% {
-  content: "Problem Sol"
-}
-45% {
-  content:"Problem "
-}
-50% {
-  content: "Pro"
-}
-55% {
-  content:""
+  content: "Team-Player"
 }
 60% {
-  content: "Team"
-}
-65% {
-  content:"Team Player"
-}
-70% {
-  content: "Team"
-}
-75% {
-  content:""
-}
-80% {
-  content:"Lea"
-}
-85% {
   content: "Leader"
 }
-90% {
-  content:"Lea"
+80% {
+  content: "Nerd"
 }
-95% {
-  content:""
+90% {
+  content: "Software Engineer"
 }
 100% {
   content: "Software Engineer"
@@ -87,27 +46,29 @@
 .atom-wrapper {
   display: flex;
   flex-direction: column;
-  height: 70vh;
   color: white;
+  margin: 2rem 0;
   justify-content: center;
   align-items: center;
 }
 .atom {
-  margin: 0 auto;
+  margin: 2rem auto;
   max-width: 400px;
   overflow:visible
 }
 .atom-content {
   display: flex; 
   justify-content: center;
-  height: 20vh;
-}
+width: 80vw;}
 .atom-section {
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
   color: white;
   align-self: center;
+}
+.atom-section a {
+  text-align: center;
 }
 
 .exterior-ring,

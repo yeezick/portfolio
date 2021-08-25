@@ -55,9 +55,6 @@ const Header = () => {
           <Link className="nav-link" to="/portfolio">
             Portfolio
           </Link>
-          <Link className="nav-link" to="/about">
-            About
-          </Link>
         </div> 
       ) : (
         <>
@@ -80,15 +77,6 @@ const Header = () => {
                 }}
               >
                 Portfolio
-              </Link>
-              <Link
-                className="nav-link"
-                to="/about"
-                onClick={() => {
-                  setShowMenu(!showMenu);
-                }}
-              >
-                About
               </Link>
             </div>
           ) : null}
