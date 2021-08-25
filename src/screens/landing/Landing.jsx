@@ -47,11 +47,11 @@ const Landing = () => {
   return (
     <div>
       <section className="intro app-section">
-        <p className="intro-hello">Hello</p>
+        <p className="intro-hello">Hello, I'm Erick,</p>
         <p className="intro-me">
-          I'm Erick, a software engineer. Welcome to my portfolio
+           a <span className="intro-span"> </span>
         </p>
-        <p className="intro-options">What would you like to see first?</p>
+        {/* <p className="intro-options">What would you like to see first?</p> */}
       </section>
 
       <section className="atom-wrapper">

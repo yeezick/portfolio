@@ -9,6 +9,80 @@
 .intro * {
   font-size: 2.25rem;
 }
+.intro-span::before {
+  content: "Software Engineer";
+  animation: changingText infinite 10s;
+  padding-left: 10px;
+}
+@keyframes changingText {
+  0%{
+    content: "Software Engineer"
+  }
+3% {
+  content: "Software Engin"
+}
+5% {
+  content: "Software"
+}
+10% {
+  content: "Soft"
+}
+15% {
+  content:""
+}
+20% {
+  content: "Pro"
+}
+25% {
+  content:"Problem "
+}
+30% {
+  content:"Problem Sol"
+}
+35% {
+  content:"Problem Solver"
+}
+40% {
+  content: "Problem Sol"
+}
+45% {
+  content:"Problem "
+}
+50% {
+  content: "Pro"
+}
+55% {
+  content:""
+}
+60% {
+  content: "Team"
+}
+65% {
+  content:"Team Player"
+}
+70% {
+  content: "Team"
+}
+75% {
+  content:""
+}
+80% {
+  content:"Lea"
+}
+85% {
+  content: "Leader"
+}
+90% {
+  content:"Lea"
+}
+95% {
+  content:""
+}
+100% {
+  content: "Software Engineer"
+}
+
+}
 
 .atom-wrapper {
   display: flex;
