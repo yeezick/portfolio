@@ -9,6 +9,10 @@ import "./landing.css";
 const Landing = () => {
   const [toggleDetail, setToggleDetail] = useState(0);
 
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+
   const handleAtomClick = () => {
     console.log(toggleDetail);
     if (toggleDetail === 2) {

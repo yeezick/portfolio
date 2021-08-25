@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 // icons
 import {
   SiJavascript,
@@ -20,6 +21,11 @@ import firstPortfolio from "../../images/firstPortfolio.png";
 import "./portfolio.css";
 
 const Portfolio = () => {
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+
   return (
     <div className="screen">
       <section className="portfolio-landing">
