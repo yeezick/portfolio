@@ -54,8 +54,10 @@ padding: 1rem;
   font-size: 1.3rem;
   width: 200px;
   transition: all 0.5s;
+  margin: 0;
   cursor: pointer;
 }
+
 
 .project-button span {
   cursor: pointer;

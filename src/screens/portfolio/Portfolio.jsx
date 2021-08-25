@@ -46,7 +46,6 @@ const Portfolio = () => {
       <section className="portfolio-projects">
         <h2 className="section-title">PROJECTS</h2>
         <Projects />
-        <p>optional dropdown of old projects</p>
       </section>
 
       <section className="portfolio-skills">

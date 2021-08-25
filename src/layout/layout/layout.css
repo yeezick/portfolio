@@ -39,7 +39,7 @@ align-items: center;
 }
 .list-title {
   /* color: #8b817d; */
-  margin: 1rem auto;
+  /* margin-left: -2rem; */
   writing-mode: vertical-lr;
   text-orientation: upright;
   text-decoration:none;
@@ -61,6 +61,6 @@ border-right: 2px solid white;
   }
   .list-title {
       padding: 0;
-  margin: 0 10vw 0 0;
+  margin-right: 10vw;
   }
 }

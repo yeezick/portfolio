@@ -86,20 +86,26 @@
 
 .atom-wrapper {
   display: flex;
-  height: 90vh;
+  flex-direction: column;
+  height: 70vh;
   color: white;
-  justify-content: space-evenly;
-  /* align-items: ; */
+  justify-content: center;
+  align-items: center;
 }
 .atom {
   margin: 0 auto;
   max-width: 400px;
   overflow:visible
 }
-.atom * {
-  /* background-color: white; */
+.atom-content {
+  display: flex; 
+  justify-content: center;
+  height: 20vh;
 }
 .atom-section {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
   color: white;
   align-self: center;
 }
