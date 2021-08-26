@@ -93,12 +93,12 @@ const Landing = () => {
           <div className="exterior-ring">
             <div className="interior-ring">
               <div className="interior-orbit">
-                <Link to="/portfolio" className="interior-circle">
+                <div className="interior-circle">
                   <BsFillPersonLinesFill size={30} variant="light" />
-                </Link>
-                <Link to="/about" className="interior-circle">
+                </div>
+                <div className="interior-circle">
                   <FaCode size={40} />
-                </Link>
+                </div>
               </div>
             </div>
 

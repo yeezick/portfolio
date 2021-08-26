@@ -14,33 +14,9 @@
 }
 .intro-span::before {
   content: "Software Engineer";
-  /* animation: changingText infinite 5s; */
+  animation: changingText infinite 5s;
   animation-direction: alternate;
   padding-left: 10px;
-}
-@keyframes changingText {
-0% {
-  content: "Developer"
-}
-20% {
-  content: "Problem Solver"
-}
-40% {
-  content: "Team-Player"
-}
-60% {
-  content: "Leader"
-}
-80% {
-  content: "Nerd"
-}
-90% {
-  content: "Software Engineer"
-}
-100% {
-  content: "Software Engineer"
-}
-
 }
 
 .atom-wrapper {
@@ -85,7 +61,7 @@ width: 80vw;}
   height: 300px;
   position: relative;
   z-index: -1;
-  /* animation: 30s rotate-exterior linear infinite; */
+  animation: 30s rotate-exterior linear infinite;
 }
 
 .exterior-circle,
@@ -100,11 +76,6 @@ width: 80vw;}
   width: 33px;
   height: 33px;
 }
-/* .exterior-circle:nth-of-type(0) {
-  background-color: gold;
-  top: 25%;
-  right: 15%;
-} */
 .exterior-circle:nth-of-type(2) {
   top: 20%;
   right: 0;
@@ -148,7 +119,7 @@ width: 80vw;}
   transform: translate(-50%, -50%);
 }
 .interior-orbit {
-  /* animation: 10s rotate-interior linear infinite; */
+  animation: 10s rotate-interior linear infinite;
   height: 200px;
   width: 200px;
   border-radius: 100%;
@@ -161,7 +132,6 @@ width: 80vw;}
   align-items: center;
 }
 .interior-circle * {
-  /* text-decoration: none; */
   color: black;
   border-radius: 90%;
   padding: auto;
@@ -203,6 +173,29 @@ width: 80vw;}
     transform: rotate(-360deg);
   }
 }
+@keyframes changingText {
+  0% {
+    content: "Developer"
+  }
+  20% {
+    content: "Problem Solver"
+  }
+  40% {
+    content: "Team-Player"
+  }
+  60% {
+    content: "Leader"
+  }
+  80% {
+    content: "Nerd"
+  }
+  90% {
+    content: "Software Engineer"
+  }
+  100% {
+    content: "Software Engineer"
+  }
+  }
 
 @media screen and (min-width: 800px) {
   .atom {
