@@ -50,7 +50,7 @@ align-items: center;
 }
 .technical-icons * {
   margin: 0.5rem;
-  transition: 1s;
+  transition: .25s;
   overflow:visible;
 }
 
