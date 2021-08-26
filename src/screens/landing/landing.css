@@ -13,8 +13,8 @@
   font-size: 2.25rem;
 }
 .intro-span::before {
-  content: "";
-  animation: changingText infinite 5s;
+  content: "Software Engineer";
+  /* animation: changingText infinite 5s; */
   animation-direction: alternate;
   padding-left: 10px;
 }
@@ -85,7 +85,7 @@ width: 80vw;}
   height: 300px;
   position: relative;
   z-index: -1;
-  animation: 30s rotate-exterior linear infinite;
+  /* animation: 30s rotate-exterior linear infinite; */
 }
 
 .exterior-circle,
@@ -148,7 +148,7 @@ width: 80vw;}
   transform: translate(-50%, -50%);
 }
 .interior-orbit {
-  animation: 10s rotate-interior linear infinite;
+  /* animation: 10s rotate-interior linear infinite; */
   height: 200px;
   width: 200px;
   border-radius: 100%;
@@ -159,7 +159,6 @@ width: 80vw;}
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: 100s rotate-icons linear infinite;
 }
 .interior-circle * {
   /* text-decoration: none; */
@@ -202,14 +201,6 @@ width: 80vw;}
   }
   to {
     transform: rotate(-360deg);
-  }
-}
-@keyframes rotate-icons {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(180deg);
   }
 }
 
