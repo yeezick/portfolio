@@ -15,6 +15,7 @@ import {
 } from "react-icons/si";
 
 import Projects from "../../components/projects/Projects";
+import Sidebar from "../../components/sidebar/Sidebar"
 
 import firstPage from "../../images/firstPage.png";
 import firstPortfolio from "../../images/firstPortfolio.png";
@@ -28,6 +29,7 @@ const Portfolio = () => {
 
   return (
     <div className="screen">
+      <Sidebar/>
       <section className="portfolio-landing">
         <div className="portfolio-intro">
           <h2 className="portfolio-title">Erick Manrique</h2>

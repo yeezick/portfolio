@@ -1,23 +1,36 @@
 import { useState } from "react"
 
-import "sidebar.css"
+import "./sidebar.css"
 
 const Sidebar = () => {
 
-  const [sidebar, setSidebar] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
+
+  const handleSidebar = () => {
+    setShowSidebar(!showSidebar)
+  }
 
   return (
-    <div className="sidebar">
+    <>
+    <div className="sidebar" onClick={handleSidebar}>
     <p className="sidebar-label">CONTACT ME</p>  
-    
-
-      <div className="open-sidebar">
-      <div className="sidebar-item">
-        <p>I'm a link to contact or resume</p>
-      </div>
-      </div>
-
     </div>
+    
+    
+      <div className={showSidebar ? "sidebar-menu active" : "sidebar-menu"}>
+      <div className="sidebar-content" onClick={handleSidebar}>
+        <div className="sidebar-toggle">
+        <p>CLOSE</p>
+        </div>
+        <p className="sidebar-item">
+         LinkedIn </p>
+        <p className="sidebar-item">
+         Resume </p>
+      </div>
+      </div>
+      </>
+
+    
   )
 }
 
