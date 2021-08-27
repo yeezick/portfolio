@@ -11,7 +11,7 @@ const Sidebar = () => {
   }
 
   return (
-    <>
+    <div className="sidebar-wrapper">
     <div className="sidebar" onClick={handleSidebar}>
     <p className="sidebar-label">CONTACT ME</p>  
     </div>
@@ -28,9 +28,9 @@ const Sidebar = () => {
          Resume </p>
       </div>
       </div>
-      </>
+      </div>
 
-    
+
   )
 }
 

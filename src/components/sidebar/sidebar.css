@@ -1,23 +1,26 @@
+.sidebar-wrapper {
+  width: 1px;
+}
 .sidebar {
   background-color: orangered;
   height: 80px;
   display: flex;
-  justify-content: start;
+  justify-content: end;
   align-items: center;
   position: fixed; 
   top: 10vh;
-  left: 0;
+  right: 0;
 }
 
 .sidebar-menu {
-  width: 250px;
   height: 60vh;
   display: flex;
   justify-content: center;
   position: fixed;
   top: 20vh;
-  left: -100%;
+  right: 0;
   transition: 850ms;
+  text-align: right;
 }
 .sidebar-menu.active {
   left: 0;
