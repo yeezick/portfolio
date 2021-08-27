@@ -18,12 +18,12 @@
   justify-content: center;
   position: fixed;
   top: 20vh;
-  right: 0;
+  right: -100%;
   transition: 850ms;
   text-align: right;
 }
 .sidebar-menu.active {
-  left: 0;
+  right: 0;
   transition: 350ms;
 }
 

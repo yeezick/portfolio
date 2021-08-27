@@ -1,4 +1,7 @@
 import { useState } from "react"
+import {SiLinkedin} from "react-icons/si"
+import {RiCloseFill, RiGithubLine, RiTwitterLine, RiFileList3Line} from "react-icons/ri"
+import {HiOutlineAtSymbol} from "react-icons/hi"
 
 import "./sidebar.css"
 
@@ -20,12 +23,13 @@ const Sidebar = () => {
       <div className={showSidebar ? "sidebar-menu active" : "sidebar-menu"}>
       <div className="sidebar-content" onClick={handleSidebar}>
         <div className="sidebar-toggle">
-        <p>CLOSE</p>
+        <RiCloseFill size={40}/>
         </div>
-        <p className="sidebar-item">
-         LinkedIn </p>
-        <p className="sidebar-item">
-         Resume </p>
+         <RiGithubLine size={40}/>
+        <SiLinkedin size={40}/>
+        <RiTwitterLine size={40}/>
+         <HiOutlineAtSymbol size={40}/>
+    <RiFileList3Line size={40}/>
       </div>
       </div>
       </div>
