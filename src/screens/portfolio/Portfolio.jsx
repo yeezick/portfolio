@@ -139,7 +139,7 @@ const Portfolio = () => {
               </p>
               <p className="project-techs">Vanilla CSS and HTML</p>
               <a
-                href="https://erickmanrique.com/emBusinessCard/"
+                href="https://yeezick.github.io/emBusinessCard/"
                 target="_blank"
                 rel="noreferrer"
               >
