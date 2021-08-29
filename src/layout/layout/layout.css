@@ -38,8 +38,6 @@ p, li, button {
 align-items: center;
 }
 .list-title {
-  /* color: #8b817d; */
-  /* margin-left: -2rem; */
   writing-mode: vertical-lr;
   text-orientation: upright;
   text-decoration:none;
