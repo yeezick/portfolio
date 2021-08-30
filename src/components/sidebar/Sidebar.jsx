@@ -26,7 +26,7 @@ const Sidebar = () => {
       <div className={showSidebar ? "sidebar-menu active" : "sidebar-menu"}>
         <div className="sidebar-content">
           <div className="sidebar-toggle" onClick={handleSidebar}>
-            <RiCloseFill size={40} />
+            <RiCloseFill size={30} />
           </div>
           <a
             href="https://github.com/yeezick"
@@ -62,8 +62,10 @@ const Sidebar = () => {
           
           <a href={resume} alt="my resume" rel="noreferrer">
           <RiFileList3Line size={40} />
+          <span className="sidebar-span">
+            Resume
+            </span>
           </a>
-          Resume
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@
 }
 .sidebar {
   background-color: orangered;
-  width: 40px;
+  width: 45px;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -32,11 +32,28 @@
 }
 
 .sidebar-content {
+  background-color: black;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
 }
+.sidebar-content * {
+  text-decoration: none;
+  color: orangered;
+}
 
 .sidebar-toggle {
   background-color: orangered;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.sidebar-toggle * {
+  color: white;
+  /* margin: 0 auto; */
+}
+
+.sidebar-span {
+  display: flex;
+  font-size: .75rem;
 }
