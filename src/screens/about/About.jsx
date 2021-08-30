@@ -41,7 +41,7 @@ const About = () => {
           <ul>
             <li>
               Master software development and open doors into software
-              archietcture
+              architecture
             </li>
             <li>Travel to Argentina to discover my roots</li>
             <li>Ride a 4-wheeler without crashing it </li>
