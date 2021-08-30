@@ -12,6 +12,7 @@ text-align: center;
   margin-bottom: 1rem;
   
   font-size: 1.5rem;
+  font-family: 'Orbitron', sans-serif;
   /* text-decoration: underline; */
 }
 .cosmic-picture {
@@ -20,7 +21,7 @@ text-align: center;
   margin: 1rem 0;
 }
 .cosmic-text, .cosmic-courtesy {
-  padding: 1rem;
+  padding: 1rem 2rem;
   text-align: left;
 }
 .cosmic-courtesy > a {

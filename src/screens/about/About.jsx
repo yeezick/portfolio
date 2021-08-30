@@ -64,11 +64,11 @@ const About = () => {
         </div>
       </section>
 
-      <section className="about-glimpse">
+      {/* <section className="about-glimpse">
         <h2 className="section-title">A Glimpse into my Life</h2>
         <h3 className="section-subtitle">Sometimes pictures say a thousand words</h3>
         <h5>Carousel with images goes here</h5>
-      </section>
+      </section> */}
 
       <section className="about-farewell">
         <h2 className="section-title">
