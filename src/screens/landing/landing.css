@@ -14,7 +14,7 @@
   font-size: 2.25rem;
 }
 .intro-typewriter {
-  /* position: fixed; */
+  position: fixed;
   max-width: 10rem;
   overflow: hidden;
 }
