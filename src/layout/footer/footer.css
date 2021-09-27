@@ -11,11 +11,18 @@
 .creator, .network * {
   color: white;
 }
+.network img {
+  height: 70px;
+}
 .footer-title {
   text-align: center;
   margin: 1rem 0;
 }
+.footer-text {
+  margin-bottom: 1rem;
+}
 .footer-links {
+  align-items: center;
   display: flex; 
   justify-content: space-evenly;
 }

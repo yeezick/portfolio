@@ -9,7 +9,7 @@ import Particles from "react-particles-js"
 
 import particleData from "./particlesjs-config.json"
 import "./App.css";
-import { configure } from "@testing-library/dom";
+// import { configure } from "@testing-library/dom";
 
 function App() {
 
@@ -17,8 +17,7 @@ function App() {
   return (
     <>
     <Layout className="App">
-    <Particles  id="particles-js" params={particleData}/>
-      {/* <Sidebar/>
+      <Sidebar/>
      <Route exact path="/">
        <Landing/>
      </Route>
@@ -27,7 +26,8 @@ function App() {
      </Route>
      <Route path="/portfolio">
        <Portfolio/>
-     </Route> */}
+     </Route>
+    <Particles  id="particles-js" params={particleData}/>
     </Layout>
     </>
   );
