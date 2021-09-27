@@ -5,7 +5,7 @@
   "intro"
   "atom"
   "modal";
-  height: fit-content
+  /* height: fit-content */
 }
 .landing-intro {
   color: white;
@@ -64,3 +64,11 @@
   }
   }
 
+@media screen and (min-width: 800px) {
+  .landing {
+    grid-template-areas: 
+    "atom intro"
+    "atom modal";
+  }
+
+}

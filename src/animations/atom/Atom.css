@@ -158,7 +158,7 @@
   .atom {
     margin: auto 0;
     max-width: 50vw;
-    transform: scale(1.5);
+    transform: scale(1.5) translateY(5vh);
   }
   .atom-content {
     width: 60vw;
