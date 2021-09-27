@@ -24,10 +24,10 @@ const Landing = () => {
 
   return (
     <div className="landing">
-      <section className="intro app-section">
-        <div className="intro-landing-text">
-          <p className="intro-hello">Hello, I'm Erick,</p>
-          <p className="intro-me">
+      <section className="intro">
+        <div className="intro-greeting">
+          <p className="intro-text">Hello, I'm Erick,</p>
+          <p className="intro-typewriter">
             <span className="intro-span"> </span>
           </p>
         </div>

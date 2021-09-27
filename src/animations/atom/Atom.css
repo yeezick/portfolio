@@ -1,0 +1,176 @@
+.atom-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 2rem 0;
+  justify-content: center;
+  align-items: center;
+}
+.atom {
+  margin: 2rem auto;
+  max-width: 400px;
+  overflow:visible
+}
+.atom-content {
+  display: flex; 
+  justify-content: center;
+width: 80vw;}
+.atom-section {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  color: white;
+  align-self: center;
+}
+.atom-section a {
+  text-align: center;
+}
+
+.exterior-ring,
+.interior-ring,
+.interior-orbit,
+.nucleus {
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px solid white;
+  /* margin: auto; */
+}
+.exterior-ring {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  z-index: -1;
+  animation: 30s rotate-exterior linear infinite;
+}
+
+.exterior-circle,
+.interior-circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: white;
+}
+.exterior-circle {
+  width: 33px;
+  height: 33px;
+}
+.exterior-circle:nth-of-type(2) {
+  top: 20%;
+  right: 0;
+}
+.exterior-circle:nth-of-type(3) {
+  top: 3%;
+  right: 16%;
+}
+.exterior-circle:nth-of-type(4) {
+  top: 67%;
+  right: 0;
+}
+.exterior-circle:nth-of-type(5) {
+  top: 83%;
+  right: 13%;
+}
+.exterior-circle:nth-of-type(6) {
+  top: 85%;
+  left: 15%;
+}
+.exterior-circle:nth-of-type(7) {
+  top: 67%;
+  left: 0%;
+}
+.exterior-circle:nth-of-type(8) {
+  top: 20%;
+  left: 0;
+}
+.exterior-circle:nth-of-type(9) {
+  top: 5%;
+  left: 15%;
+}
+
+.interior-ring {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.interior-orbit {
+  animation: 10s rotate-interior linear infinite;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  position: relative;
+}
+.interior-circle {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.interior-circle * {
+  color: black;
+  border-radius: 90%;
+  padding: auto;
+}
+.interior-circle:nth-of-type(1) {
+  top: 35%;
+  left: -10%;
+}
+.interior-circle:nth-of-type(2) {
+  top: 35%;
+  right: -10%;
+}
+
+.nucleus {
+  background: gray;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@keyframes rotate-exterior {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-interior {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .atom {
+    margin: auto 0;
+    max-width: 50vw;
+    transform: scale(1.5);
+  }
+  .atom-content {
+    width: 60vw;
+  }
+  .atom-section {
+    max-width: 30vw;
+  }
+  .atom-wrapper {
+    flex-direction: row;
+    margin: 0 auto 10rem;
+  }
+ /* .atom-active-about .interior-orbit, .atom-active-about .exterior-ring , .atom-active-portfolio .interior-orbit, .atom-active-portfolio .exterior-ring  {
+  animation:none;
+ } */
+
+}

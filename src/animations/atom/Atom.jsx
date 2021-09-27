@@ -2,6 +2,8 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaCode } from "react-icons/fa"; //close contender FaLaptopCode
 import resPic from "../../images/resPic.jpeg";
 
+import "./Atom.css"
+
 const Atom = () => {
   return (
     <section className="atom-wrapper">
