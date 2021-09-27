@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 import InfoModal from "../../components/infoModal/InfoModal";
 import Atom from "../../animations/atom/Atom";
@@ -24,16 +23,29 @@ const Landing = () => {
 
   return (
     <div className="landing">
-      <section className="intro">
+      <section className="landing-intro">
         <div className="intro-greeting">
-          <p className="intro-text">Hello, I'm Erick,</p>
+          <p className="intro-text">
+            Hello,
+            <br /> I'm Erick,
+          </p>
           <p className="intro-typewriter">
             <span className="intro-span"> </span>
           </p>
         </div>
-        <InfoModal toggleDetail={toggleDetail}/>
+
       </section>
-      <Atom />
+        <div id="landing-modal">
+          <InfoModal toggleDetail={toggleDetail} />
+        </div>
+
+      <div id="landing-atom">
+        <Atom
+          toggleDetail={toggleDetail}
+          setToggleDetail={setToggleDetail}
+          handleAtomClick={handleAtomClick}
+        />
+      </div>
     </div>
   );
 };

@@ -4,20 +4,20 @@ import resPic from "../../images/resPic.jpeg";
 
 import "./Atom.css"
 
-const Atom = () => {
+const Atom = ({toggleDetail, handleAtomClick}) => {
   return (
     <section className="atom-wrapper">
     <div
       id="atom"
       className="atom"
-      // className={
-      //   toggleDetail === 0
-      //     ? "atom"
-      //     : toggleDetail === 1
-      //     ? "atom atom-active-about"
-      //     : "atom atom-active-portfolio"
-      // }
-      // onClick={handleAtomClick}
+      className={
+        toggleDetail === 0
+          ? "atom"
+          : toggleDetail === 1
+          ? "atom atom-active-about"
+          : "atom atom-active-portfolio"
+      }
+      onClick={handleAtomClick}
     >
       <div className="exterior-ring">
         <div className="interior-ring">

@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6, .intro-hello, .intro-span {
   font-family: 'Orbitron', sans-serif;
 }
 p, li, button {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'raleway', sans-serif;
   font-size: 20px;
   font-weight: 500;
 }

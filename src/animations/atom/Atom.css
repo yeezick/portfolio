@@ -9,12 +9,14 @@
 .atom {
   margin: 2rem auto;
   max-width: 400px;
-  overflow:visible
+  overflow: visible;
 }
 .atom-content {
-  display: flex; 
+  display: flex;
   justify-content: center;
-width: 80vw;}
+  margin: 0 auto;
+  width: 80vw;
+}
 .atom-section {
   display: flex;
   flex-flow: column;
@@ -135,7 +137,6 @@ width: 80vw;}
   transform: translate(-50%, -50%);
 }
 
-
 @keyframes rotate-exterior {
   from {
     transform: rotate(0deg);
@@ -169,8 +170,7 @@ width: 80vw;}
     flex-direction: row;
     margin: 0 auto 10rem;
   }
- /* .atom-active-about .interior-orbit, .atom-active-about .exterior-ring , .atom-active-portfolio .interior-orbit, .atom-active-portfolio .exterior-ring  {
+  /* .atom-active-about .interior-orbit, .atom-active-about .exterior-ring , .atom-active-portfolio .interior-orbit, .atom-active-portfolio .exterior-ring  {
   animation:none;
  } */
-
 }

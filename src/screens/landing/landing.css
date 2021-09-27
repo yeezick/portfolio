@@ -1,28 +1,42 @@
+
 .landing {
+  display: grid;
+  grid-template-areas:
+  "intro"
+  "atom"
+  "modal";
   height: fit-content
 }
-.intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 30vh;
+.landing-intro {
   color: white;
+  display: flex;
+  grid-area: intro;
+  flex-direction: column;
+  height: 30vh;
+  justify-content: space-evenly;
   text-align: center;
   /* position: relative; */
 }
-.intro * {
+.landing-intro * {
   font-size: 2.25rem;
+  font-family: "orbitron", "sans-serif";
 }
 .intro-typewriter {
-  position: fixed;
-  max-width: 10rem;
-  overflow: hidden;
+  margin-top: 2rem;
 }
 .intro-span::before {
   content: "Software Engineer";
   animation: changingText infinite 5s;
   animation-direction: alternate;
-  padding-left: 10px;
+  /* padding-left: 10px; */
+}
+#landing-modal {
+  grid-area: modal;
+}
+
+
+#landing-atom {
+  grid-area: atom;
 }
 
 
