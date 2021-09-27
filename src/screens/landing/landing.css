@@ -5,7 +5,7 @@
   "intro"
   "atom"
   "modal";
-  /* height: fit-content */
+  min-height: 90vh;
 }
 .landing-intro {
   color: white;
@@ -68,7 +68,8 @@
   .landing {
     grid-template-areas: 
     "atom intro"
+    "atom modal"
     "atom modal";
-  }
+    }
 
 }

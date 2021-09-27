@@ -27,7 +27,8 @@ const Landing = () => {
         <div className="intro-greeting">
           <p className="intro-text">
             Hello,
-            <br /> I'm Erick,
+            <br /> I'm Erick, 
+            {/* idea to make erick also dynamically change => I'm Erick => I'm a developer => I'm a nerd */}
           </p>
           <p className="intro-typewriter">
             <span className="intro-span"> </span>
