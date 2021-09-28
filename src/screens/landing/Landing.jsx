@@ -13,6 +13,7 @@ const Landing = () => {
     window.scrollTo(0, 0);
   }, []);
 
+
   const handleAtomClick = () => {
     console.log(toggleDetail);
     if (toggleDetail === 2) {
@@ -30,25 +31,28 @@ const Landing = () => {
             Hello World,
           </p>
           <p className="intro-typewriter">
-          I'm <TypewriterComponent style={{display:"inline-block" }}
+          I'm <TypewriterComponent className="typewriter"
+              options={{
+                loop: true
+              }}
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("Erick")
-                  .pauseFor(2000)
+                  .typeString("Erick!")
+                  .pauseFor(1000)
                   .deleteAll()
-                  .typeString("a software engineer.")
-                  .pauseFor(2000)
+                  .typeString("a software engineer!")
+                  .pauseFor(1000)
                   .deleteAll()
-                  .typeString("a problem-solver.")
-                  .pauseFor(2000)
+                  .typeString("a problem-solver!")
+                  .pauseFor(1000)
                   .deleteAll()
-                  .typeString("a leader.")
-                  .pauseFor(2000)
+                  .typeString("a leader!")
+                  .pauseFor(1000)
                   .deleteAll()
-                  .typeString("a team-player.")
-                  .pauseFor(2000)
+                  .typeString("a team-player!")
+                  .pauseFor(1000)
                   .deleteAll()
-                  .typeString("a nerd.")
+                  .typeString("a nerd!")
                   .start();
               }}
             />
