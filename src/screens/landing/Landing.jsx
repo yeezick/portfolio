@@ -63,7 +63,7 @@ const Landing = () => {
         <InfoModal toggleDetail={toggleDetail} />
       </div>
 
-      <div id="landing-atom">
+      <div className={`landing-atom ${toggleDetail > 0 ?"atom-transition":"atom-transition-revert"}`}>
         <Atom
           toggleDetail={toggleDetail}
           setToggleDetail={setToggleDetail}

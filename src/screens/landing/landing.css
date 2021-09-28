@@ -8,14 +8,17 @@
   min-height: 90vh;
 }
 .landing-intro {
+  align-items: center;
   color: white;
   display: flex;
   grid-area: intro;
   flex-direction: column;
-  height: 30vh;
+  margin-bottom: 3rem;
+  min-height: 30vh;
+
   justify-content: space-evenly;
   text-align: center;
-  /* position: relative; */
+  position: relative;
 }
 .landing-intro * {
   font-size: 2.25rem;
@@ -23,6 +26,9 @@
 }
 .intro-typewriter {
   margin-top: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)
 }
 .intro-typewriter * {
   display: inline;
@@ -34,7 +40,7 @@
   display: inline;
 }
 
-#landing-atom {
+.landing-atom {
   grid-area: atom;
 }
 
@@ -45,5 +51,28 @@
     "atom modal"
     "atom modal";
     }
-
+    .landing-atom {
+      min-height: fit-content;
+      position: relative;
+      right: 45%;
+    }
+    .atom-transition {
+      max-height: 40vh;
+      transition: transform 1s ease-in-out 25ms;
+      transform: translateY(50%)
+    }
+    .atom-transition-revert {
+      transition: 0.75s;
+      max-height: 40vh;
+      transition: transform 1s ease-in-out 25ms;
+      transform: translateY(10%)
+    }
+    .landing-intro {
+      width: 50vw;
+    }
+}
+@media screen and (min-width: 1000px) {
+  .landing-atom {
+    right: 0%;
+  }
 }

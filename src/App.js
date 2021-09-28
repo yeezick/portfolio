@@ -26,7 +26,7 @@ function App() {
         <Route path="/portfolio">
           <Portfolio />
         </Route>
-        <Particles id="particles-js" params={particleData} />
+        {/* <Particles id="particles-js" params={particleData} /> */}
       </Layout>
     </>
   );
