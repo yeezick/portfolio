@@ -1,0 +1,10 @@
+.infotab {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  color: white;
+  align-self: center;
+}
+.infotab a {
+  text-align: center;
+}

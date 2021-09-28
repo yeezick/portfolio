@@ -13,7 +13,7 @@ const InfoModal = ({toggleDetail}) => {
   };
 
   return (
-    <div className="atom-content">
+    <div id="infomodal">
     {toggleDetail === 0 ? <Tap/> : toggleDetail === 1 ? (
       <InfoTab title={"About Me"} text={"I'm a 22 year old developer, with a huge passion for science an astronomy. My deep admiration for these make it apparent to me that being on the cutting edge of technology is equivalent to contributing to humanity's evolution. That's exactly where I want to be."} link={"about"} span={"Find Out More"}/>
     ) : (

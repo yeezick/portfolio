@@ -11,18 +11,6 @@
   /* max-width: 400px; */
   overflow: visible;
 }
-/* leaving off here investigating atom content */
-
-.atom-section {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-evenly;
-  color: white;
-  align-self: center;
-}
-.atom-section a {
-  text-align: center;
-}
 
 .exterior-ring,
 .interior-ring,
