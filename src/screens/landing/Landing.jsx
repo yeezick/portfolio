@@ -13,7 +13,6 @@ const Landing = () => {
     window.scrollTo(0, 0);
   }, []);
 
-
   const handleAtomClick = () => {
     console.log(toggleDetail);
     if (toggleDetail === 2) {
@@ -27,13 +26,13 @@ const Landing = () => {
     <div className="landing">
       <section className="landing-intro">
         <div className="intro-greeting">
-          <p className="intro-text">
-            Hello World,
-          </p>
+          <p className="intro-text">Hello World,</p>
           <p className="intro-typewriter">
-          I'm <TypewriterComponent className="typewriter"
+            I'm{" "}
+            <TypewriterComponent
+              className="typewriter"
               options={{
-                loop: true
+                loop: true,
               }}
               onInit={(typewriter) => {
                 typewriter
@@ -63,7 +62,11 @@ const Landing = () => {
         <InfoModal toggleDetail={toggleDetail} />
       </div>
 
-      <div className={`landing-atom ${toggleDetail > 0 ?"atom-transition":"atom-transition-revert"}`}>
+      <div
+        className={`landing-atom ${
+          toggleDetail > 0 ? "atom-transition" : "atom-transition-revert"
+        }`}
+      >
         <Atom
           toggleDetail={toggleDetail}
           setToggleDetail={setToggleDetail}

@@ -2,8 +2,13 @@
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
-  color: white;
+  /* color: white; */
   align-self: center;
+}
+.infotab-title {
+  color: black;
+  font-size: 2rem;
+  text-align:center;
 }
 .infotab a {
   text-align: center;

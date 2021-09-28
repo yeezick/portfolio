@@ -1,7 +1,70 @@
 #infomodal {
-  /* background-color: white; */
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 20vw;
+  flex-direction: column;
+  position: relative;
+  width: 50vw;
+  /* height: 300px; */
+  background: rgba(14, 14, 14, 0.474);
+  margin: 100px auto 0;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.modal-tabs {
+  display: flex;
+}
+.tabs, .exit-tab {
+  font-size: 1.3rem;
+  padding: 15px;
+  text-align: center;
+  background: rgba(194, 194, 194, 0.502);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  position: relative;
+}
+.tabs {
+  width: 50%;
+}
+.tabs:not(:last-child){
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-tabs  {
+  background: rgb(194, 194, 194);
+  border-bottom: 1px solid transparent;
+}
+.exit-tab {
+width: fit-content;
+}
+
+/* bar above active tab */
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 5px;
+  background: rgb(220, 92, 0);
+}
+
+/* space behind content */
+.modal-content {
+  flex-grow : 1;
+}
+.content {
+  background: rgba(0, 0, 0, 0.274);
+  color: white;
+  padding: 2rem 4rem;
+  width: 100%;
+  height: 100%;
+  display: none;
+  margin: 0!important;
+}
+.content * {
+  color: white;
+}
+.active-content {
+  display: block;
 }

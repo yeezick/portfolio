@@ -4,7 +4,7 @@ import "./InfoTab.css"
 const InfoTab = ({title, text, link, span}) => {
   return (
     <div className="infotab">
-      <h3 className="infotab-title section-title">{title}</h3>
+      <h3 className="infotab-title">{title}</h3>
       <p className="infotab-text section-text">
         {text}
       </p>
