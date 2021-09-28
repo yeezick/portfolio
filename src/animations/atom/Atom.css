@@ -12,12 +12,7 @@
   overflow: visible;
 }
 /* leaving off here investigating atom content */
-.atom-content {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 80vw;
-}
+
 .atom-section {
   display: flex;
   flex-flow: column;
