@@ -24,45 +24,19 @@
 .intro-typewriter {
   margin-top: 2rem;
 }
-.intro-span::before {
-  content: "Software Engineer";
-  animation: changingText infinite 5s;
-  animation-direction: alternate;
-  /* padding-left: 10px; */
+.intro-typewriter * {
+  display: inline;
 }
 #landing-modal {
   grid-area: modal;
 }
-
+.typewriter {
+  display: inline;
+}
 
 #landing-atom {
   grid-area: atom;
 }
-
-
-@keyframes changingText {
-  0% {
-    content: "Developer"
-  }
-  20% {
-    content: "Problem Solver"
-  }
-  40% {
-    content: "Team-Player"
-  }
-  60% {
-    content: "Leader"
-  }
-  80% {
-    content: "Nerd"
-  }
-  90% {
-    content: "Software Engineer"
-  }
-  100% {
-    content: "Software Engineer"
-  }
-  }
 
 @media screen and (min-width: 800px) {
   .landing {

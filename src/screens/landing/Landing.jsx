@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import InfoModal from "../../components/infoModal/InfoModal";
 import Atom from "../../animations/atom/Atom";
+import TypewriterComponent from "typewriter-effect";
 
 import "./landing.css";
 
@@ -26,19 +27,37 @@ const Landing = () => {
       <section className="landing-intro">
         <div className="intro-greeting">
           <p className="intro-text">
-            Hello,
-            <br /> I'm Erick, 
-            {/* idea to make erick also dynamically change => I'm Erick => I'm a developer => I'm a nerd */}
+            Hello World,
           </p>
           <p className="intro-typewriter">
-            <span className="intro-span"> </span>
+          I'm <TypewriterComponent style={{display:"inline-block" }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("Erick")
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .typeString("a software engineer.")
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .typeString("a problem-solver.")
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .typeString("a leader.")
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .typeString("a team-player.")
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .typeString("a nerd.")
+                  .start();
+              }}
+            />
           </p>
         </div>
-
       </section>
-        <div id="landing-modal">
-          <InfoModal toggleDetail={toggleDetail} />
-        </div>
+      <div id="landing-modal">
+        <InfoModal toggleDetail={toggleDetail} />
+      </div>
 
       <div id="landing-atom">
         <Atom
