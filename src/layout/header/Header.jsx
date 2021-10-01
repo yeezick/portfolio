@@ -5,16 +5,16 @@ import "./header.css";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [desktop, setDesktop] = useState(true);
+  const [desktop, setDesktop] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 425) {
-        setShowMenu(false);
+      // if (window.innerWidth > 425) {
+      //   setShowMenu(false);
+      //   // setDesktop(true);
+      // }
+      if (window.innerWidth > 800) {
         setDesktop(true);
-      }
-      if (window.innerWidth < 1024) {
-        setDesktop(false);
       }
     };
     window.addEventListener("resize", handleResize);
@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <nav className="navbar">
-      {showMenu ? (
+            {showMenu ? (
         <FaTimes
           size={30}
           className="nav-menu"
@@ -42,10 +42,13 @@ const Header = () => {
           }}
         />
       )}
+      
+      
       <Link className="nav-left" to="/">
         <FaReact size={50} className="nav-react" />
         <h1 className="nav-title">Erick Manrique</h1>
       </Link>
+
 
       {desktop ? (
         <div className="nav-right">
