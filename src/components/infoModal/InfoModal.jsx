@@ -16,13 +16,17 @@ const InfoModal = () => {
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(1)}
         >
-          Who am I?
+          <p>
+          WHO AM I?
+          </p>
         </div>
         <div
           className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(2)}
         >
-          What can I do?
+          <p>
+          WHAT CAN I DO?
+          </p>
         </div>
         {
           toggleState > 0 ?

@@ -13,7 +13,6 @@ import "./App.css";
 
 function App() {
   return (
-    <>
       <Layout className="App">
         <Sidebar />
         <Route exact path="/">
@@ -27,7 +26,6 @@ function App() {
         </Route>
         <Particles id="particles-js" params={particleData} />
       </Layout>
-    </>
   );
 }
 

@@ -50,10 +50,10 @@
 .nav-menu {
   color: white;
   position: fixed;
-  right: 15px;
+  right: 8px;
   top: 15px;
   cursor: pointer;
-  z-index: 80;;
+  z-index: 80;
 }
 .nav-link {
   color: white;
