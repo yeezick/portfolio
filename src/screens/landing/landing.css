@@ -35,6 +35,7 @@
 }
 #landing-modal {
   grid-area: modal;
+  max-width: 100vw;
 }
 .typewriter {
   display: inline;

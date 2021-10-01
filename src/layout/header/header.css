@@ -3,7 +3,7 @@
   justify-content: flex-start;
   align-items: center;
   height: 4rem;
-  width: 100vw;
+  max-width: 100vw;
   z-index: 75;
   position: sticky;
   top: 0;

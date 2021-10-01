@@ -4,7 +4,7 @@ import "./layout.css"
 
 const Layout = (props) => {
   return (
-    <div>
+    <div className="layout">
       <Header/>
       <main className="layout-children">
       {props.children}
