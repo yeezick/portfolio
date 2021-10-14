@@ -8,7 +8,6 @@ import {
 } from "react-icons/ri";
 import { HiOutlineAtSymbol } from "react-icons/hi";
 
-import resume from "../../images/Erick_Manrique_Resume_pdf.pdf"
 import "./sidebar.css";
 
 const Sidebar = () => {
