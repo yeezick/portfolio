@@ -5,15 +5,14 @@ import "./header.css";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [desktop, setDesktop] = useState(false);
+  const [desktop, setDesktop] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
-      // if (window.innerWidth > 425) {
-      //   setShowMenu(false);
-      //   // setDesktop(true);
-      // }
-      if (window.innerWidth > 800) {
+
+      if (window.innerWidth < 1024) {
+        setDesktop(false);
+      } else {
         setDesktop(true);
       }
     };

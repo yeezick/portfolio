@@ -1,5 +1,3 @@
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaCode } from "react-icons/fa"; //close contender FaLaptopCode
 import resPic from "../../images/resPic.jpeg";
 
 import "./Atom.css"
@@ -15,10 +13,8 @@ const Atom = ({toggleDetail, handleAtomClick}) => {
         <div className="interior-ring">
           <div className="interior-orbit">
             <div className="interior-circle">
-              <BsFillPersonLinesFill size={30} variant="light" />
             </div>
             <div className="interior-circle">
-              <FaCode size={40} />
             </div>
           </div>
         </div>
