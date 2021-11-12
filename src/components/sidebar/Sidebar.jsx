@@ -59,7 +59,7 @@ const Sidebar = () => {
           <HiOutlineAtSymbol size={40} />
           </a>
           
-          <a href="https://drive.google.com/file/d/1aOx2t5h2chJAyoV3QjGOUYLilbqfBVnP/view" alt="my resume" rel="noreferrer">
+          <a href="https://drive.google.com/file/d/1D4ByXJ5D3-a_QkSgLBxw4fnmqfSgd7B6/view?usp=sharing" alt="my resume" rel="noreferrer">
           <RiFileList3Line size={40} />
           <span className="sidebar-span">
             Resume
