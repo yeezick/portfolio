@@ -1,15 +1,14 @@
-import { useState } from "react";
 import InfoTab from "./infoTab/InfoTab";
+import {GrFormClose} from 'react-icons/gr'
 import "./InfoModal.css";
 
 const InfoModal = ({toggleDetail, setToggleDetail}) => {
-
   const toggleTab = (index) => {
     setToggleDetail(index);
   };
 
   return (
-    <div id="infomodal">
+    <div className={`infomodal ${toggleDetail && "active-modal"}`}>
       <div className="modal-tabs">
         <div
           className={toggleDetail === 1 ? "tabs active-tabs" : "tabs"}
@@ -30,7 +29,7 @@ const InfoModal = ({toggleDetail, setToggleDetail}) => {
         {
           toggleDetail > 0 ?
           <span    className={toggleDetail > 0 ? "exit-tab" : "tabs"}
-          onClick={() => toggleTab(0)}>X</span>
+          onClick={() => toggleTab(0)}><GrFormClose size={30}/></span>
           : null
         }
       </div>
