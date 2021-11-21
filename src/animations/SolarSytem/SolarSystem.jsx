@@ -1,5 +1,4 @@
 // assets
-import resPic from "../../images/resPic.jpeg";
 import {
   SiJavascript,
   SiHtml5,
