@@ -2,18 +2,17 @@ import { useState } from "react";
 import InfoTab from "./infoTab/InfoTab";
 import "./InfoModal.css";
 
-const InfoModal = () => {
-  const [toggleState, setToggleState] = useState(0);
+const InfoModal = ({toggleDetail, setToggleDetail}) => {
 
   const toggleTab = (index) => {
-    setToggleState(index);
+    setToggleDetail(index);
   };
 
   return (
     <div id="infomodal">
       <div className="modal-tabs">
         <div
-          className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+          className={toggleDetail === 1 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(1)}
         >
           <p>
@@ -21,7 +20,7 @@ const InfoModal = () => {
           </p>
         </div>
         <div
-          className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+          className={toggleDetail === 2 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(2)}
         >
           <p>
@@ -29,8 +28,8 @@ const InfoModal = () => {
           </p>
         </div>
         {
-          toggleState > 0 ?
-          <span    className={toggleState > 0 ? "exit-tab" : "tabs"}
+          toggleDetail > 0 ?
+          <span    className={toggleDetail > 0 ? "exit-tab" : "tabs"}
           onClick={() => toggleTab(0)}>X</span>
           : null
         }
@@ -38,7 +37,7 @@ const InfoModal = () => {
 
       <div className="modal-content">
         <div
-          className={toggleState === 1 ? "content active-content" : "content"}
+          className={toggleDetail === 1 ? "content active-content" : "content"}
         >
           <InfoTab
             title={"About Me"}
@@ -50,7 +49,7 @@ const InfoModal = () => {
           />
         </div>
         <div
-          className={toggleState === 2 ? "content active-content" : "content"}
+          className={toggleDetail === 2 ? "content active-content" : "content"}
         >
           <InfoTab
             title={"Portfolio"}

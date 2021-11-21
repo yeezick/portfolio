@@ -9,7 +9,6 @@ const Header = () => {
 
   useEffect(() => {
     const handleResize = () => {
-
       if (window.innerWidth < 1024) {
         setDesktop(false);
       } else {
@@ -24,7 +23,7 @@ const Header = () => {
 
   return (
     <nav className="navbar">
-            {showMenu ? (
+      {showMenu ? (
         <FaTimes
           size={30}
           className="nav-menu"
@@ -41,13 +40,11 @@ const Header = () => {
           }}
         />
       )}
-      
-      
+
       <Link className="nav-left" to="/">
         <FaReact size={50} className="nav-react" />
         <h1 className="nav-title">Erick Manrique</h1>
       </Link>
-
 
       {desktop ? (
         <div className="nav-right">
@@ -57,7 +54,7 @@ const Header = () => {
           <Link className="nav-link" to="/portfolio">
             Portfolio
           </Link>
-        </div> 
+        </div>
       ) : (
         <>
           {showMenu ? (

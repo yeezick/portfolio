@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
 import InfoModal from "../../components/infoModal/InfoModal";
-import Atom from "../../animations/atom/Atom";
 import TypewriterComponent from "typewriter-effect";
 
 import "./landing.css";
+import SolarSystem from "../../animations/SolarSytem/SolarSystem";
 
 const Landing = () => {
   const [toggleDetail, setToggleDetail] = useState(0);
@@ -12,15 +12,6 @@ const Landing = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const handleAtomClick = () => {
-    console.log(toggleDetail);
-    if (toggleDetail === 2) {
-      setToggleDetail(0);
-    } else {
-      setToggleDetail(toggleDetail + 1);
-    }
-  };
 
   return (
     <div className="landing">
@@ -59,19 +50,11 @@ const Landing = () => {
         </div>
       </section>
       <div id="landing-modal">
-        <InfoModal toggleDetail={toggleDetail} />
+        <InfoModal toggleDetail={toggleDetail} setToggleDetail={setToggleDetail} />
       </div>
 
-      <div
-        className={`landing-atom ${
-          toggleDetail > 0 ? "atom-transition" : "atom-transition-revert"
-        }`}
-      >
-        <Atom
-          toggleDetail={toggleDetail}
-          setToggleDetail={setToggleDetail}
-          handleAtomClick={handleAtomClick}
-        />
+      <div className={`landing-solar-system ${toggleDetail && "active-system" }`}>
+        <SolarSystem />
       </div>
     </div>
   );

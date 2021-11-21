@@ -1,10 +1,12 @@
 import { Route } from "react-router";
 
-// components
-import Layout from "./layout/layout/Layout.jsx";
+// screens
 import Landing from "./screens/landing/Landing";
 import About from "./screens/about/About";
 import Portfolio from "./screens/portfolio/Portfolio";
+import Testing from "./screens/testing/testing.jsx"
+// assets
+import Layout from "./layout/layout/Layout.jsx";
 import Sidebar from "./components/sidebar/Sidebar";
 import Particles from "react-particles-js";
 
@@ -23,6 +25,9 @@ function App() {
         </Route>
         <Route path="/portfolio">
           <Portfolio />
+        </Route>
+        <Route path="/testing">
+          <Testing />
         </Route>
         <Particles id="particles-js" params={particleData} />
       </Layout>

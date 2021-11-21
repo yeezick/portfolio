@@ -19,6 +19,7 @@ button {
 }
 .layout {
   max-width: 100vw;
+  overflow: hidden;
 }
 .layout-children {
   max-width: 100vw;

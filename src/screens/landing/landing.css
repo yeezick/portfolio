@@ -3,7 +3,7 @@
   display: grid;
   grid-template-areas:
   "intro"
-  "atom"
+  "solar"
   "modal";
   min-height: 90vh;
 }
@@ -41,36 +41,28 @@
   display: inline;
 }
 
-.landing-atom {
-  grid-area: atom;
+.landing-solar-system {
+  margin: 2rem 0;
+  grid-area: solar;
 }
 
 @media screen and (min-width: 800px) {
   .landing {
     grid-template-areas: 
-    "atom intro"
-    "atom modal"
-    "atom modal";
-    }
-    .landing-atom {
-      min-height: fit-content;
-      position: relative;
-      right: 45%;
-    }
-    .atom-transition {
-      max-height: 40vh;
-      transition: transform 1s ease-in-out 25ms;
-      transform: translateY(50%)
-    }
-    .atom-transition-revert {
-      transition: 0.75s;
-      max-height: 40vh;
-      transition: transform 1s ease-in-out 25ms;
-      transform: translateY(10%)
+    "solar intro"
+    "solar modal"
+    "solar modal";
     }
     .landing-intro {
       width: 50vw;
       margin: 0 auto;
+    }
+    .landing-solar-system {
+      transition: 1.5s;
+      margin: auto;
+    }
+    .active-system {
+      transform: translateY(25%)
     }
 }
 @media screen and (min-width: 1000px) {
