@@ -25,7 +25,7 @@
     border-radius: 50% !important;
     width: 170px;
     height: 170px;
-    animation: 6s rotate-interior linear infinite;
+    animation: 5s rotate-interior linear infinite;
     top: 21.5%;
     left: 21.5%;
   }
@@ -33,7 +33,7 @@
   .orbit:nth-of-type(3) {
     width: 210px;
     height: 210px;
-    animation: 9s rotate-interior linear infinite;
+    animation: 7s rotate-interior linear infinite;
     top: 15.5%;
     left: 15%;
   }
@@ -41,7 +41,7 @@
   .orbit:nth-of-type(4) {
     width: 250px;
     height: 250px;
-    animation: 12s rotate-interior linear infinite;
+    animation: 9s rotate-interior linear infinite;
     top: 8.5%;
     left: 8%;
   }
@@ -49,35 +49,35 @@
   .orbit:nth-of-type(5) {
     width: 290px;
     height: 290px;
-    animation: 15s rotate-interior linear infinite;
+    animation: 11s rotate-interior linear infinite;
     top: 2%;
     left: 1.25%;
   }
   .orbit:nth-of-type(6) {
     width: 330px;
     height: 330px;
-    animation: 18s rotate-interior linear infinite;
+    animation: 13s rotate-interior linear infinite;
     top: -4.75%;
     left: -5.25%;
   }
   .orbit:nth-of-type(7) {
     width: 370px;
     height: 370px;
-    animation: 21s rotate-interior linear infinite;
+    animation: 15s rotate-interior linear infinite;
     top: -11.25%;
     left: -11.95%;
   }
   .orbit:nth-of-type(8) {
     width: 410px;
     height: 410px;
-    animation: 24s rotate-interior linear infinite;
+    animation: 17s rotate-interior linear infinite;
     top: -17.25%;
     left: -18.75%;
   }
   
   .sun {
     height: 90px;
-    border-radius: 100%;
+    border-radius: 40%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

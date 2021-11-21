@@ -45,7 +45,7 @@ const SolarSystem = () => {
       <div className="orbit">
         <SiHtml5 size={30} color="#f06529" />
       </div>
-      <img src={resPic} alt="myself" className="sun" />
+      <img src="https://raw.githubusercontent.com/yeezick/iNetwork/main/src/images/erick-cool.gif" alt="myself" className="sun" />
     </div>
   );
 };

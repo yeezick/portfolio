@@ -7,7 +7,8 @@ h5,
 h6,
 .intro-hello,
 .intro-span,
-.tabs {
+.tabs, 
+.nav-link {
   font-family: "Orbitron", sans-serif;
 }
 p,

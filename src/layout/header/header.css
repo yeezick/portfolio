@@ -8,7 +8,7 @@
   position: sticky;
   top: 0;
 
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .nav-left,
 .nav-right * {
@@ -20,13 +20,10 @@
   display: flex;
   align-items: center;
 }
-.nav-react {
-  animation: rotateReact infinite 15s linear;
-  color: #61dafb;
-}
 .nav-left * {
   display: inline;
   margin-right: 1rem;
+  text-align: center;
 }
 
 .mobile-nav-right {
@@ -56,15 +53,7 @@
 }
 .nav-link {
   color: white;
-}
-
-@keyframes rotateReact {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-weight: 700;
 }
 
 @media only screen and (min-width: 1025px) {

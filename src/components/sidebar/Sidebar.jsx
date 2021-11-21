@@ -19,7 +19,7 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar-wrapper">
-      <div className="sidebar" onClick={handleSidebar}>
+      <div className={showSidebar ? "sidebar active-sidebar" : "sidebar inactive-sidebar"} onClick={handleSidebar}>
         <p className="sidebar-label">CONTACT</p>
       </div>
       <div className={showSidebar ? "sidebar-menu active" : "sidebar-menu"}>
@@ -32,7 +32,7 @@ const Sidebar = () => {
             className="network-link"
             rel="noreferrer"
           >
-          <RiGithubLine size={40} />
+            <RiGithubLine size={40} />
           </a>
 
           <a
@@ -40,7 +40,7 @@ const Sidebar = () => {
             className="network-link"
             rel="noreferrer"
           >
-          <SiLinkedin size={40} />
+            <SiLinkedin size={40} />
           </a>
 
           <a
@@ -48,7 +48,7 @@ const Sidebar = () => {
             className="network-link"
             rel="noreferrer"
           >
-          <RiTwitterLine size={40} />
+            <RiTwitterLine size={40} />
           </a>
 
           <a
@@ -56,14 +56,16 @@ const Sidebar = () => {
             className="network-link"
             rel="noreferrer"
           >
-          <HiOutlineAtSymbol size={40} />
+            <HiOutlineAtSymbol size={40} />
           </a>
-          
-          <a href="https://drive.google.com/file/d/1D4ByXJ5D3-a_QkSgLBxw4fnmqfSgd7B6/view" alt="my resume" rel="noreferrer">
-          <RiFileList3Line size={40} />
-          <span className="sidebar-span">
-            Resume
-            </span>
+
+          <a
+            href="https://drive.google.com/file/d/1D4ByXJ5D3-a_QkSgLBxw4fnmqfSgd7B6/view"
+            alt="my resume"
+            rel="noreferrer"
+          >
+            <RiFileList3Line size={40} />
+            <span className="sidebar-span">Resume</span>
           </a>
         </div>
       </div>

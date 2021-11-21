@@ -8,6 +8,7 @@
   position: relative;
   transition: 1.5s;
   width: 90vw;
+  z-index: 3;
 }
 .infomodal .modal-content {
   transition: 2s;
@@ -112,7 +113,7 @@
     max-height: fit-content;
   }
   .active-modal {
-    height: 60vh;
+    height: 67vh;
   }
   .modal-content {
     overflow: scroll;
