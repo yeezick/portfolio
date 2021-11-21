@@ -42,6 +42,8 @@
 }
 .mobile-nav-right * {
   margin: 2rem 0;
+  font-size: 30px;
+  text-decoration: none;
 }
 .nav-menu {
   color: white;

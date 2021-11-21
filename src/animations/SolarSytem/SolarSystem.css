@@ -16,7 +16,7 @@
   .orbit:nth-of-type(1) {
     width: 130px;
     height: 130px;
-    animation: 3s rotate-interior linear infinite;
+    animation: 4s rotate-interior linear infinite;
     top: 28.3%;
     left: 28.35%;
   }
@@ -25,7 +25,7 @@
     border-radius: 50% !important;
     width: 170px;
     height: 170px;
-    animation: 5s rotate-interior linear infinite;
+    animation: 4.1s rotate-interior linear reverse infinite;
     top: 21.5%;
     left: 21.5%;
   }
@@ -33,7 +33,7 @@
   .orbit:nth-of-type(3) {
     width: 210px;
     height: 210px;
-    animation: 7s rotate-interior linear infinite;
+    animation: 4.2s rotate-interior linear infinite;
     top: 15.5%;
     left: 15%;
   }
@@ -41,7 +41,7 @@
   .orbit:nth-of-type(4) {
     width: 250px;
     height: 250px;
-    animation: 9s rotate-interior linear infinite;
+    animation: 4.3s rotate-interior linear reverse infinite;
     top: 8.5%;
     left: 8%;
   }
@@ -49,28 +49,28 @@
   .orbit:nth-of-type(5) {
     width: 290px;
     height: 290px;
-    animation: 11s rotate-interior linear infinite;
+    animation: 4.4s rotate-interior linear infinite;
     top: 2%;
     left: 1.25%;
   }
   .orbit:nth-of-type(6) {
     width: 330px;
     height: 330px;
-    animation: 13s rotate-interior linear infinite;
+    animation: 4.5s rotate-interior linear reverse infinite;
     top: -4.75%;
     left: -5.25%;
   }
   .orbit:nth-of-type(7) {
     width: 370px;
     height: 370px;
-    animation: 15s rotate-interior linear infinite;
+    animation: 4.6s rotate-interior linear infinite;
     top: -11.25%;
     left: -11.95%;
   }
   .orbit:nth-of-type(8) {
     width: 410px;
     height: 410px;
-    animation: 17s rotate-interior linear infinite;
+    animation: 4.7s rotate-interior linear reverse infinite;
     top: -17.25%;
     left: -18.75%;
   }

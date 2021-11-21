@@ -69,7 +69,7 @@ const Header = () => {
                   setShowMenu(!showMenu);
                 }}
               >
-                About
+                ABOUT
               </Link>
               <Link
                 className="nav-link"
@@ -78,8 +78,9 @@ const Header = () => {
                   setShowMenu(!showMenu);
                 }}
               >
-                Portfolio
+                PORTFOLIO
               </Link>
+              <a className="nav-link" href="https://drive.google.com/file/d/1D4ByXJ5D3-a_QkSgLBxw4fnmqfSgd7B6/view">RESUME</a>
             </div>
           ) : null}
         </>
