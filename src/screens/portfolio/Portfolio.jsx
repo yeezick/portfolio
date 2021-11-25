@@ -1,5 +1,7 @@
 import { useEffect } from "react";
-// icons
+import Projects from "../../components/projects/Projects";
+import ProjectItem from "../../components/projects/projectItem/ProjectItem"
+// assets
 import {
   SiJavascript,
   SiHtml5,
@@ -13,18 +15,14 @@ import {
   SiMongodb,
   SiNodeDotJs,
 } from "react-icons/si";
-
-import Projects from "../../components/projects/Projects";
-
 import firstPage from "../../images/firstPage.png";
 import firstPortfolio from "../../images/firstPortfolio.png";
 import "./portfolio.css";
 
 const Portfolio = () => {
-
   useEffect(() => {
-    window.scrollTo(0,0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="screen">
@@ -121,85 +119,25 @@ const Portfolio = () => {
           15th, when I stopped working to learn to program full-time.
         </p>
         <div className="projects">
-          <div className="project-item">
-            <a
-              href="https://yeezick.github.io/emBusinessCard/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img className="project-img" src={firstPage} alt="iNetwork" />
-            </a>
+          <ProjectItem
+            url="https://yeezick.github.io/emBusinessCard/"
+            github="https://yeezick.github.io/emBusinessCard/"
+            img={firstPage}
+            title="E-Business Card"
+            text="Before JavaScript, there was HTML and CSS. That's historically
+                true and true for me too."
+            techs="Vanilla CSS and HTML"
+          />
 
-            <div className="project-desc">
-              <h3 className="project-title">E-Business Card</h3>
-              <p className="project-text">
-                Before JavaScript, there was HTML and CSS. That's historically
-                true and true for me too.
-                <br />
-              </p>
-              <p className="project-techs">Vanilla CSS and HTML</p>
-              <a
-                href="https://yeezick.github.io/emBusinessCard/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="project-button">
-                  <span>Visit Site</span>
-                </button>
-              </a>
-              <a
-                href="https://github.com/yeezick/emBusinessCard"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="project-button">
-                  <span>Visit GitHub</span>
-                </button>
-              </a>
-            </div>
-          </div>
-
-          <div className="project-item">
-            <a
-              href="https://yeezick.github.io/firstPortfolio/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                className="project-img"
-                src={firstPortfolio}
-                alt="iNetwork"
-              />
-            </a>
-
-            <div className="project-desc">
-              <h3 className="project-title">First Portfolio</h3>
-              <p className="project-text">
-                After being recommended by a friend, I ambitiously created a
-                portfolio showcasing 4 other, more amateur projects.
-                <br />
-              </p>
-              <p className="project-techs">Vanilla CSS and HTML</p>
-              <a
-                href="https://yeezick.github.io/firstPortfolio/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="project-button">
-                  <span>Visit Site</span>
-                </button>
-              </a>
-              <a
-                href="https://github.com/yeezick/firstPortfolio"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="project-button">
-                  <span>Visit GitHub</span>
-                </button>
-              </a>
-            </div>
-          </div>
+          <ProjectItem
+            url="https://yeezick.github.io/firstPortfolio/"
+            github="https://yeezick.github.io/firstPortfolio/"
+            img={firstPortfolio}
+            title="First Portfolio"
+            text="After being recommended by a friend, I ambitiously created a
+                portfolio showcasing 4 other, more amateur projects."
+            techs="Vanilla CSS, HTML, and Bootstrap"
+          />
         </div>
       </section>
     </div>
