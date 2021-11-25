@@ -1,21 +1,16 @@
-import {useEffect} from "react"
-import NasaPod from "../../components/NasaPod/NasaPod"
-import map from "../../images/map-zoom-out.png"
+import { useEffect } from "react";
+import NasaPod from "../../components/nasaPod/NasaPod";
 import "./about.css";
 
 const About = () => {
-
   useEffect(() => {
-    window.scrollTo(0,0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="screen">
-      <div className="about-landing-img">
-        <img src={map} alt="my travels" />
-      </div>
-
-      <section className="about-story">        <h2 className="section-title">Long Story Short</h2>
+      <section className="about-story">
+        <h2 className="section-title">Long Story Short</h2>
         <p className="section-text">
           I am an argentine native, residing in the US for quite literally 95%
           of my life.
@@ -35,7 +30,7 @@ const About = () => {
 
       <section className="about-goals">
         <h2 className="section-title">I have goals</h2>
-        <p style={{textAlign:"center"}}>(They tend to be ambitious)</p>
+        <p style={{ textAlign: "center" }}>(They tend to be ambitious)</p>
         <div className="list">
           <h3 className="list-title">SHORT-TERM</h3>
           <ul>
@@ -75,8 +70,7 @@ const About = () => {
           Farewell <small>(/ˌferˈwel/)</small>
         </h2>
         <h3 className="section-subtitle">
-          <i>exclamation</i> -
-          used to express good wishes on parting.
+          <i>exclamation</i> - used to express good wishes on parting.
         </h3>
         <p className="section-text">
           While goodbyes are never easy, I’m also not one to depart without a
@@ -89,12 +83,12 @@ const About = () => {
           my heart goes out to the brave people and fellow admirers that
           dedicate their lives to satiating the curiosity of the great beyond.
           <br />
-          Without further ado, I share with you one of my personal favorite API’s..
+          Without further ado, I share with you one of my personal favorite
+          API’s..
         </p>
-        <h3 className="section-title">NASA’s Astronomy Picture of the
-          Day</h3>
-<NasaPod/>  
-    </section>
+        <h3 className="section-title">NASA’s Astronomy Picture of the Day</h3>
+        <NasaPod />
+      </section>
     </div>
   );
 };

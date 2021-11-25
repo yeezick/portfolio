@@ -16,7 +16,6 @@ const Projects = () => {
           key={`AP${index}`}
         />
       ))}
-      {/* <ProjectItem url="" github="" img={} title="" text="" techs=""/> */}
     </div>
   );
 };
