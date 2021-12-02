@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../animations/Logo/Logo"
+import Logo from "../../animations/Logo/Logo";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./header.css";
 
@@ -16,7 +16,7 @@ const Header = () => {
         setDesktop(true);
       }
     };
-    handleResize()
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -44,7 +44,7 @@ const Header = () => {
       )}
 
       <Link className="nav-left" to="/">
-<Logo />
+        <Logo />
         <h1 className="nav-title">Erick Manrique</h1>
       </Link>
 
@@ -56,7 +56,12 @@ const Header = () => {
           <Link className="nav-link" to="/portfolio">
             PORTFOLIO
           </Link>
-          <a className="nav-link" href="https://drive.google.com/file/d/1D4ByXJ5D3-a_QkSgLBxw4fnmqfSgd7B6/view">RESUME</a>
+          <a
+            className="nav-link"
+            href="https://drive.google.com/file/d/1D4ByXJ5D3-a_QkSgLBxw4fnmqfSgd7B6/view"
+          >
+            RESUME
+          </a>
         </div>
       ) : (
         <>
@@ -80,7 +85,12 @@ const Header = () => {
               >
                 PORTFOLIO
               </Link>
-              <a className="nav-link" href="https://drive.google.com/file/d/1D4ByXJ5D3-a_QkSgLBxw4fnmqfSgd7B6/view">RESUME</a>
+              <a
+                className="nav-link"
+                href="https://drive.google.com/file/d/1k5Wn0NjXWUY922SfeInHwkYWtIHqBYL0/view?usp=sharing"
+              >
+                RESUME
+              </a>
             </div>
           ) : null}
         </>
