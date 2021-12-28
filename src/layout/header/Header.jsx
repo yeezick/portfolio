@@ -87,7 +87,7 @@ const Header = () => {
               </Link>
               <a
                 className="nav-link"
-                href="https://drive.google.com/file/d/1k5Wn0NjXWUY922SfeInHwkYWtIHqBYL0/view"
+                href="https://drive.google.com/file/d/1IgZK5muB_P97ZaQmuEZaWAzu4ZGEeLFr/view?usp=sharing"
               >
                 RESUME
               </a>
