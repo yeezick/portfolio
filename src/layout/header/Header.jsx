@@ -58,7 +58,9 @@ const Header = () => {
           </Link>
           <a
             className="nav-link"
-            href="https://drive.google.com/file/d/1D4ByXJ5D3-a_QkSgLBxw4fnmqfSgd7B6/view"
+            href="https://drive.google.com/file/d/1IgZK5muB_P97ZaQmuEZaWAzu4ZGEeLFr/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
           >
             RESUME
           </a>
@@ -88,6 +90,8 @@ const Header = () => {
               <a
                 className="nav-link"
                 href="https://drive.google.com/file/d/1IgZK5muB_P97ZaQmuEZaWAzu4ZGEeLFr/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
               >
                 RESUME
               </a>
