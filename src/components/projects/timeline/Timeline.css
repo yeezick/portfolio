@@ -1,0 +1,77 @@
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 40px 0;
+}
+
+.timeline-container::after {
+  background-color: white;
+  content: "";
+  position: absolute;
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 100%;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  position: relative;
+  margin: 10px 0;
+  width: 50%;
+}
+.timeline-item:nth-child(odd) {
+  align-self: flex-end;
+  justify-content: flex-start;
+  padding-left: 30px;
+  padding-right: 0;
+}
+.timeline-item-content {
+  align-items: flex-end;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  padding: 15px;
+  position: relative;
+  text-align: right;
+  width: 400px;
+}
+.timeline-item-content::after {
+  background-color: white;
+  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+  content: "";
+  height: 15px;
+  position: absolute;
+  right: -7.5px;
+  top: calc(50% - 7.5px);
+  transform: rotate(45deg);
+  width: 15px;
+}
+.timeline-item:nth-child(odd) .timeline-item-content {
+  align-items: flex-start;
+  text-align: left;
+}
+.timeline-item:nth-child(even) .timeline-item-content::after {
+  right: auto;
+  left: -7.5px;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.timlien-item-content .tag {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  top: 5px;
+  left: 5px;
+  letter-spacing: 1px;
+  padding: 5px;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+/* huuuuge thanks to Florin Pop for helping me create this component using his tutorial at: https://www.florin-pop.com/blog/2019/04/how-to-create-a-timeline-with-react/ */
