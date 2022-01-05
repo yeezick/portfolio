@@ -15,15 +15,6 @@ export const allProjects = [
   },
   {
     featured: true,
-    github: "https://github.com/yeezick/iNetwork",
-    // img: homeiov2,
-    techs: "React with JS, AOS, and Bootstrap.",
-    text: "A casual online alternative to the formal resume, users can submit    their information through a form to render an 'business card.' Full CRUD functionality implemented via AirTable.",
-    title: "Home.io",
-    url: "https://inetwork.netlify.app/",
-  },
-  {
-    featured: true,
     github: "https://github.com/yeezick/home.io-v2",
     img: homeio,
     techs: "Ruby on Rails and React.",
