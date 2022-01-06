@@ -58,6 +58,11 @@
   font-weight: 700;
 }
 
+.shuttle {
+  transform: rotate(-45deg) translateY(-10px);
+  margin: auto;
+}
+
 @media only screen and (min-width: 1025px) {
   .nav-menu {
     display: none;
@@ -67,7 +72,7 @@
   }
 
   .navbar {
-    justify-content: space-between;;
+    justify-content: space-between;
   }
   .nav-right {
     display: flex;
@@ -75,20 +80,19 @@
     align-items: center;
     height: 4rem;
     width: 35vw;
-  } 
-   .nav-link {
+  }
+  .nav-link {
     padding: 0 2rem;
     display: flex;
     height: 50%;
     align-items: center;
     transition: 1s;
   }
-  .nav-right *:hover{
+  .nav-right *:hover {
     height: 100%;
     background-color: white;
     border-radius: 2px;
     color: black;
     font-size: 1.3rem;
-
   }
 }

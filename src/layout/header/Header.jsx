@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../animations/Logo/Logo";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaSpaceShuttle } from "react-icons/fa";
 import "./header.css";
 
 const Header = () => {
@@ -44,7 +43,9 @@ const Header = () => {
       )}
 
       <Link className="nav-left" to="/">
-        <Logo />
+        <div className="shuttle">
+          <FaSpaceShuttle size={50} />
+        </div>
         <h1 className="nav-title">Erick Manrique</h1>
       </Link>
 

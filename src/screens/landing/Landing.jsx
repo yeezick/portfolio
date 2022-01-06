@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-
-import InfoModal from "../../components/infoModal/InfoModal";
 import TypewriterComponent from "typewriter-effect";
 
-import "./landing.css";
+import InfoModal from "../../components/infoModal/InfoModal";
 import SolarSystem from "../../animations/SolarSytem/SolarSystem";
+
+import "./landing.css";
 
 const Landing = () => {
   const [toggleDetail, setToggleDetail] = useState(0);
@@ -50,10 +50,15 @@ const Landing = () => {
         </div>
       </section>
       <div id="landing-modal">
-        <InfoModal toggleDetail={toggleDetail} setToggleDetail={setToggleDetail} />
+        <InfoModal
+          toggleDetail={toggleDetail}
+          setToggleDetail={setToggleDetail}
+        />
       </div>
 
-      <div className={`landing-solar-system ${toggleDetail && "active-system" }`}>
+      <div
+        className={`landing-solar-system ${toggleDetail && "active-system"}`}
+      >
         <SolarSystem />
       </div>
     </div>
