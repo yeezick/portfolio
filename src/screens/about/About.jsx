@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { NasaPod } from "../../components/nasaPod/NasaPod";
+import { NasaPod } from "../../components/NasaPod/NasaPod.jsx";
 import "./about.css";
 
 const About = () => {
