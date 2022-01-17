@@ -2,25 +2,8 @@
 // import homeio from "../../images/homeio.png";
 // import dignifiedWiners from "../../images/dignified-winers.png";
 // import notAnotherTodoApp from "../../images/notAnotherTodoApp.png";
-// [
-//   {
-//       text: 'Wrote my first blog post ever on Medium',
-//       date: 'March 03 2017',
-//       category: {
-//           tag: 'medium',
-//           color: '#018f69'
-//       },
-//       link: {
-//           url:
-//               'https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2',
-//           text: 'Read more'
-//       }
-//   },
-//   {
-//       // Another object with data
-//   }
-// ];
-const allProjects = [
+
+const projects = [
   {
     date: new Date("06-14-2021"),
     category: {
@@ -399,26 +382,21 @@ const incomplete = [
     },
   },
 ];
-const allOfProjects = [...allProjects, ...sideWork, ...tutorials];
+const allOfProjects = [...projects, ...sideWork, ...tutorials];
 
-const sortConvertedDates = async () => {
-  const sortList = (list) => {
-    const sortedList = list.sort((a, b) =>
-      new Date(a.date) < new Date(b.date) ? 1 : -1
-    );
-    return sortedList;
-  };
-
-  let sortedProjects = sortList(allOfProjects);
-  const options = { month: "long", day: "numeric", year: "numeric" };
-  const readableProjects = await sortedProjects.map((project) => {
-    const readableDate = project.date.toLocaleDateString("en-US", options);
-    return { ...project, date: readableDate };
-  });
-  // console.log(sortedProjects);
-  console.log(readableProjects);
+const sortList = (list) => {
+  const sortedList = list.sort((a, b) =>
+    new Date(a.date) < new Date(b.date) ? 1 : -1
+  );
+  return sortedList;
 };
-sortConvertedDates();
+
+const sortedProjects = sortList(allOfProjects);
+const options = { month: "long", day: "numeric", year: "numeric" };
+export const allProjects = sortedProjects.map((project) => {
+  const readableDate = project.date.toLocaleDateString("en-US", options);
+  return { ...project, date: readableDate };
+});
 
 /*
 const allSortedProjects = [
