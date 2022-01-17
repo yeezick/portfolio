@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Projects from "../../components/projects/Projects";
-import ProjectItem from "../../components/projects/projectItem/ProjectItem"
+import { Timeline } from "../../components/projects/timeline/Timeline";
+import ProjectItem from "../../components/projects/projectItem/ProjectItem";
 // assets
 import {
   SiJavascript,
@@ -43,7 +44,7 @@ const Portfolio = () => {
 
       <section className="portfolio-projects">
         <h2 className="section-title">PROJECTS</h2>
-        <Projects />
+        <Timeline />
       </section>
 
       <section className="portfolio-skills">
