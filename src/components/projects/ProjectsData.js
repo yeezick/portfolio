@@ -1,35 +1,26 @@
 // projects
 import iNetwork from "../../images/projects/iNetwork.png";
-import homeio from "../../images/projects/homeio.png";
+import homeioV2 from "../../images/projects/homeioV2.png";
+import homeioV1 from "../../images/projects/homeioV1.png";
 import dignifiedWiners from "../../images/projects/dignified-winers.png";
 // side projects
 import notAnotherTodoApp from "../../images/sideProjects/notAnotherTodoApp.png";
-import firstPage from "../../images/sideProjects/firstPage.png";
+import embc from "../../images/sideProjects/embc.png";
 import firstPortfolio from "../../images/sideProjects/firstPortfolio.png";
+import fccRwdTribute from "../../images/sideProjects/fcc-rwd-tribute.png";
+import fccRwdSurvey from "../../images/sideProjects/fcc-rwd-survey.png";
+import fccRwdProductLanding from "../../images/sideProjects/fcc-rwd-product-landing.png";
+
 // tutorials
 import diceGame from "../../images/tutorials/diceGame.png";
 import drumKitjQuery from "../../images/tutorials/drumKitjQuery.png";
+import drumKitDOM from "../../images/tutorials/drumKitDOM.png";
 import simon from "../../images/tutorials/simon.png";
+import cssClock from "../../images/tutorials/cssClock.png";
+import cssVariables from "../../images/tutorials/cssVariables.png";
+import firstCSS from "../../images/tutorials/firstCSS.png";
+import firstHtml from "../../images/tutorials/firstHtml.png";
 
-/**
- * need images for:
- * projects:
- * - homeio v1
- * - bootcamper
- *
- * sideWork:
- * - FCC survvey !! edit these descriptions
- * - FCC tribute
- * - FCC product landing
- *
- *
- * tutorials:
- * - drumKitDom
- * - CSS clock
- * - CSS variables
- * - firstCss
- * - firstHTML
- */
 const projects = [
   {
     date: new Date("06-14-2021"),
@@ -38,7 +29,7 @@ const projects = [
       color: "gold",
     },
     // featured: true,
-    img: iNetwork,
+    img: homeioV1,
     techs: "HTML, CSS, JavaScript DOM, API Integration",
     text: "First project for General Assembly's SEI. Inspired by iPhone widget screen, app deploys user to a 'home' screen which calls 3 API's to render data to the user.",
     title: "Home.io V1",
@@ -72,7 +63,7 @@ const projects = [
       color: "gold",
     },
     // featured: true,
-    img: homeio,
+    img: homeioV2,
     techs: "Ruby on Rails and React.",
     text: "Conceptually forked from the iPhone widget screen, home.io gives signed-up users access to a personalized home screen rendering data from up to 7 API’s.",
     title: "Home.io 2.0.0",
@@ -119,25 +110,11 @@ const projects = [
   },
 ];
 
-// export default allProjects;
-
 /**
  * nextjs(incomplete)
  * robot arena (incomplete)
  * redux-todo (incomplete)
  * cli-portfolio-generator (?)
- */
-
-/*
- * tutorials:
- * css-clock
- * simon
- * drum kit jquery
- * css variables
- * dice game
- * drum kit dom
- * html page
- * css page
  */
 
 const tutorials = [
@@ -148,7 +125,7 @@ const tutorials = [
       color: "#018f69",
     },
     // featured: true,
-    // img: notAnotherTodoApp,
+    img: firstHtml,
     techs: "HTML",
     text: "This website is a very simple page meant to solidy my understanding of HTML. It include very simple elements and is styled entirely with HTML.",
     title: "First site ever",
@@ -165,7 +142,7 @@ const tutorials = [
       color: "#018f69",
     },
     // featured: true,
-    // img: notAnotherTodoApp,
+    img: firstCSS,
     techs: "HTML & CSS",
     text: "This webpage utilizes basic HTML and CSS. It is a practice page meant to utilize CSS skills that were fresh-learned.",
     title: "First styled site ever",
@@ -182,7 +159,7 @@ const tutorials = [
       color: "#018f69",
     },
     // featured: true,
-    // img: notAnotherTodoApp,
+    img: drumKitDOM,
     techs: "HTML, CSS, JavaScript DOM",
     text: "This repository consists of a drum kit applied using only vanilla javascript and its handling of the DOM model.",
     title: "Drum kit (DOM)",
@@ -199,7 +176,7 @@ const tutorials = [
       color: "#018f69",
     },
     // featured: true,
-    // img: notAnotherTodoApp,
+    img: diceGame,
     techs: "HTML, CSS, JavaScript DOM",
     text: "This game uses vanilla JavaScript and the DOM to create an online dice roll. The player who's dice value is greater wins. Good for 2 people settling a dispute.",
     title: "Dice Game",
@@ -216,7 +193,7 @@ const tutorials = [
       color: "#018f69",
     },
     // featured: true,
-    // img: notAnotherTodoApp,
+    img: cssVariables,
     techs: "HTML, CSS, JavaScript DOM",
     text: "This site has input types which allow the user to change 3 CSS variables in a user-friendly way, while actually manipulating the variables using JavaScript.",
     title: "CSS Variables",
@@ -233,7 +210,7 @@ const tutorials = [
       color: "#018f69",
     },
     // featured: true,
-    // img: notAnotherTodoApp,
+    img: drumKitjQuery,
     techs: "HTML, CSS, JavaScript DOM",
     text: "This is a drum kit that utilizes jQuery to detect mouse and keyboard inputs in order to generate the appropriate sound.",
     title: "Drum Kit (jQuery)",
@@ -250,7 +227,7 @@ const tutorials = [
       color: "#018f69",
     },
     // featured: true,
-    // img: notAnotherTodoApp,
+    img: simon,
     techs: "HTML, CSS, JavaScript, jQuery",
     text: "This an online game called, 'Simon', where the browser highlights a color and pushes it to an array. The user must then produce all of Simon's previous choices + his latest one.",
     title: "Simon Game",
@@ -267,7 +244,7 @@ const tutorials = [
       color: "#018f69",
     },
     // featured: true,
-    // img: notAnotherTodoApp,
+    img: cssClock,
     techs: "HTML, CSS, JavaScript DOM",
     text: "This websites contains an analog clock designed in CSS with vanilla JavaScript functionality to keep an accurate time relative to user.",
     title: "CSS Clock",
@@ -293,7 +270,7 @@ const sideWork = [
       color: "orange",
     },
     // featured: true,
-    // img: notAnotherTodoApp,
+    img: embc,
     techs: "HTML & CSS",
     text: "This file contains the HTML, & CSS for Erick Manrique's first & constantly evolving business card.",
     title: "E-Business Card",
@@ -310,7 +287,7 @@ const sideWork = [
       color: "orange",
     },
     // featured: true,
-    // img: notAnotherTodoApp,
+    img: fccRwdTribute,
     techs: "HTML & CSS",
     text: "For FreeCodeCamp's responsive web design certificate, I was asked to make a tribute page using basic HTML and CSS.",
     title: "FreeCodeCamp Tribute Page",
@@ -327,7 +304,7 @@ const sideWork = [
       color: "orange",
     },
     // featured: true,
-    // img: notAnotherTodoApp,
+    img: firstPortfolio,
     techs: "HTML & CSS",
     text: "My first portfolio site prior to enrolling into General Assembly, summarizing my progress from March to May of 2021.",
     title: "First Portfolio",
@@ -344,7 +321,7 @@ const sideWork = [
       color: "orange",
     },
     // featured: true,
-    // img: notAnotherTodoApp,
+    img: fccRwdSurvey,
     techs: "HTML & CSS",
     text: "My take on the survey form page requested by FreeCodeCamp's responsive web design certification.",
     title: "FreeCodeCamp Survey Page",
@@ -361,7 +338,7 @@ const sideWork = [
       color: "orange",
     },
     // featured: true,
-    // img: notAnotherTodoApp,
+    img: fccRwdProductLanding,
     techs: "HTML & CSS",
     text: "My take on the survey form page requested by FreeCodeCamp's responsive web design certification.",
     title: "FreeCodeCamp Product Landing Page",

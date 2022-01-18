@@ -16,7 +16,7 @@ import {
   SiMongodb,
   SiNodeDotJs,
 } from "react-icons/si";
-import firstPage from "../../images/sideProjects/firstPage.png";
+import embc from "../../images/sideProjects/embc.png";
 import firstPortfolio from "../../images/sideProjects/firstPortfolio.png";
 import "./portfolio.css";
 
@@ -123,7 +123,7 @@ const Portfolio = () => {
           <ProjectItem
             url="https://yeezick.github.io/emBusinessCard/"
             github="https://yeezick.github.io/emBusinessCard/"
-            img={firstPage}
+            img={embc}
             title="E-Business Card"
             text="Before JavaScript, there was HTML and CSS. That's historically
                 true and true for me too."
