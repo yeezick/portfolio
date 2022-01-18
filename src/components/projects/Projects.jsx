@@ -1,12 +1,12 @@
 // components
 import ProjectItem from "./projectItem/ProjectItem";
 // assets
-import allProjects from "./ProjectsData";
+import { allProjects } from "./ProjectsData";
 import "./projects.css";
 const Projects = () => {
   return (
     <div className="projects">
-      {allProjects.map(({url, text, techs, img, title}, index) => (
+      {allProjects.map(({ url, text, techs, img, title }, index) => (
         <ProjectItem
           url={url}
           text={text}

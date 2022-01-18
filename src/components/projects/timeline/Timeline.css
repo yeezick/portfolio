@@ -1,4 +1,5 @@
 .timeline-container {
+  color: black;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -6,7 +7,7 @@
 }
 
 .timeline-container::after {
-  background-color: white;
+  background-color: darkorange;
   content: "";
   position: absolute;
   left: calc(50% - 2px);
@@ -29,41 +30,47 @@
   padding-right: 0;
 }
 .timeline-item-content {
-  align-items: flex-end;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  background-color: white;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
-  max-width: 70%;
+  align-items: flex-end;
   padding: 15px;
   position: relative;
+  width: 700px;
+  max-width: 90%;
   text-align: right;
-  width: 400px;
 }
+/* .timeline-item-content p {
+  align-self: center;
+} */
+
 .timeline-item-content::after {
-  background-color: white;
+  content: " ";
+  background-color: #fff;
   box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
-  content: "";
-  height: 15px;
   position: absolute;
   right: -7.5px;
   top: calc(50% - 7.5px);
   transform: rotate(45deg);
   width: 15px;
+  height: 15px;
 }
+
 .timeline-item:nth-child(odd) .timeline-item-content {
-  align-items: flex-start;
   text-align: left;
+  align-items: flex-start;
 }
-.timeline-item:nth-child(even) .timeline-item-content::after {
+
+.timeline-item:nth-child(odd) .timeline-item-content::after {
   right: auto;
   left: -7.5px;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.timlien-item-content .tag {
-  color: white;
+.timeline-item-content .tag {
+  color: #fff;
   font-size: 12px;
   font-weight: bold;
   top: 5px;
@@ -77,4 +84,101 @@
   left: auto;
   right: 5px;
 }
-.timelin/* huuuuge thanks to Florin Pop for helping me create this component using his tutorial at: https://www.florin-pop.com/blog/2019/04/how-to-create-a-timeline-with-react/ */;
+
+.timeline-item-content time {
+  color: #777;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.timeline-item-content p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 15px 0;
+  max-width: 100%;
+}
+.timeline-item-content img {
+  height: 150px;
+  width: 300px;
+  position: absolute;
+  right: -350px;
+  top: 16%;
+}
+.timeline-item:nth-child(odd) .timeline-item-content img {
+  right: 0;
+  left: -350px;
+  top: 16%;
+}
+
+.timeline-item-content a {
+  font-size: 14px;
+  font-weight: bold;
+}
+.timeline-item-content a:nth-child(odd) {
+  margin-top: 10px;
+}
+
+.timeline-item-content a:not(:nth-child(3)):after {
+  content: " ►";
+  font-size: 12px;
+}
+
+.timeline-item-content .circle {
+  background-color: orangered;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 10px);
+  right: -40px;
+  width: 20px;
+  height: 20px;
+  z-index: 100;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .circle {
+  right: auto;
+  left: -40px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .timeline-item-content {
+    max-width: 100vw;
+  }
+  .timeline-item-content img {
+    height: 75px;
+    width: 150px;
+    top: 43%;
+    right: -200px;
+  }
+  .timeline-item:nth-child(odd) .timeline-item-content img {
+    right: 0;
+    left: -200px;
+    top: 43%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .timeline-item-content,
+  .timeline-item:nth-child(odd) .timeline-item-content {
+    padding: 15px 10px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .timeline-item-content .tag {
+    width: calc(100% - 10px);
+    text-align: center;
+  }
+
+  .timeline-item-content time {
+    margin-top: 40px;
+  }
+
+  .timeline-item-content a {
+    text-decoration: underline;
+  }
+
+  .timeline-item-content a::after {
+    display: none;
+  }
+}
+/* huuuuge thanks to Florin Pop for helping me create this component using his tutorial at: https://www.florin-pop.com/blog/2019/04/how-to-create-a-timeline-with-react/ */
