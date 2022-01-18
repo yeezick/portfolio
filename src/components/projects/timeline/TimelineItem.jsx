@@ -15,7 +15,17 @@ export const TimelineItem = ({ project }) => {
           {category.tag}
         </span>
         <time>{date}</time>
+        {project.img && (
+          <>
+            <a href={link.url} target="_blank" rel="noopener noreferrer">
+              <img src={project.img} alt={project.title} />
+            </a>
+          </>
+        )}
         <p>{text}</p>
+        <a href={link.github} target="_blank" rel="noopener noreferrer">
+          Github
+        </a>
         {link.url && (
           <a href={link.url} target="_blank" rel="noopener noreferrer">
             {link.text}

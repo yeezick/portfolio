@@ -1,8 +1,35 @@
-// import iNetwork from "../../images/iNetwork.png";
-// import homeio from "../../images/homeio.png";
-// import dignifiedWiners from "../../images/dignified-winers.png";
-// import notAnotherTodoApp from "../../images/notAnotherTodoApp.png";
+// projects
+import iNetwork from "../../images/projects/iNetwork.png";
+import homeio from "../../images/projects/homeio.png";
+import dignifiedWiners from "../../images/projects/dignified-winers.png";
+// side projects
+import notAnotherTodoApp from "../../images/sideProjects/notAnotherTodoApp.png";
+import firstPage from "../../images/sideProjects/firstPage.png";
+import firstPortfolio from "../../images/sideProjects/firstPortfolio.png";
+// tutorials
+import diceGame from "../../images/tutorials/diceGame.png";
+import drumKitjQuery from "../../images/tutorials/drumKitjQuery.png";
+import simon from "../../images/tutorials/simon.png";
 
+/**
+ * need images for:
+ * projects:
+ * - homeio v1
+ * - bootcamper
+ *
+ * sideWork:
+ * - FCC survvey !! edit these descriptions
+ * - FCC tribute
+ * - FCC product landing
+ *
+ *
+ * tutorials:
+ * - drumKitDom
+ * - CSS clock
+ * - CSS variables
+ * - firstCss
+ * - firstHTML
+ */
 const projects = [
   {
     date: new Date("06-14-2021"),
@@ -11,7 +38,7 @@ const projects = [
       color: "gold",
     },
     // featured: true,
-    // img: iNetwork,
+    img: iNetwork,
     techs: "HTML, CSS, JavaScript DOM, API Integration",
     text: "First project for General Assembly's SEI. Inspired by iPhone widget screen, app deploys user to a 'home' screen which calls 3 API's to render data to the user.",
     title: "Home.io V1",
@@ -28,7 +55,7 @@ const projects = [
       color: "gold",
     },
     // featured: true,
-    // img: iNetwork,
+    img: iNetwork,
     techs: "React with JS, AOS, and Bootstrap.",
     text: "A casual online alternative to the formal resume, users can submit their information through a form to render an 'business card.' Full CRUD functionality implemented via AirTable.",
     title: "iNetwork",
@@ -45,7 +72,7 @@ const projects = [
       color: "gold",
     },
     // featured: true,
-    // img: homeio,
+    img: homeio,
     techs: "Ruby on Rails and React.",
     text: "Conceptually forked from the iPhone widget screen, home.io gives signed-up users access to a personalized home screen rendering data from up to 7 API’s.",
     title: "Home.io 2.0.0",
@@ -62,7 +89,7 @@ const projects = [
       color: "gold",
     },
     // featured: true,
-    // img: dignifiedWiners,
+    img: dignifiedWiners,
     techs: "the MERN Stack, aided by Insomnia, Heroku, and Netlify.",
     text: "Dignified Winers was collaboration between 4 talented developers and conceived as a request by a mock-client; a luxury magazine featuring ranked wines while allowing users to sign up and contribute.",
     title: "Dignified Winers",
@@ -269,7 +296,7 @@ const sideWork = [
     // img: notAnotherTodoApp,
     techs: "HTML & CSS",
     text: "This file contains the HTML, & CSS for Erick Manrique's first & constantly evolving business card.",
-    title: "Simon Game",
+    title: "E-Business Card",
     link: {
       github: "https://github.com/yeezick/emBusinessCard",
       text: "Website",
@@ -351,7 +378,7 @@ const sideWork = [
       color: "orange",
     },
     // featured: true,
-    // img: notAnotherTodoApp,
+    img: notAnotherTodoApp,
     techs: "HTML & CSS",
     text: "I was challenged by a mentor of mine to build a todo app from scratch, no tutorials. This was the result!",
     title: "Not Another Todo App",

@@ -16,8 +16,8 @@ import {
   SiMongodb,
   SiNodeDotJs,
 } from "react-icons/si";
-import firstPage from "../../images/firstPage.png";
-import firstPortfolio from "../../images/firstPortfolio.png";
+import firstPage from "../../images/sideProjects/firstPage.png";
+import firstPortfolio from "../../images/sideProjects/firstPortfolio.png";
 import "./portfolio.css";
 
 const Portfolio = () => {
