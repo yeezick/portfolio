@@ -120,14 +120,13 @@
   margin-top: 10px;
 }
 
-.timeline-item-content a::after {
+.timeline-item-content a:not(:nth-child(3)):after {
   content: " ►";
   font-size: 12px;
 }
 
 .timeline-item-content .circle {
-  background-color: #fff;
-  border: 3px solid #e17b77;
+  background-color: orangered;
   border-radius: 50%;
   position: absolute;
   top: calc(50% - 10px);

@@ -1,10 +1,9 @@
 .portfolio-landing {
-
 }
 .portfolio-intro {
-  text-align:center;
+  text-align: center;
   height: 40vh;
-  display: flex; 
+  display: flex;
   flex-flow: column;
   justify-content: space-evenly;
 }
@@ -20,24 +19,29 @@
   animation: slideUpSubHeading 1s ease 1s forwards;
 }
 
-.portfolio-projects {
-
-}
-
 .portfolio-skills {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: nowrap; */
+}
 
+.list {
+  align-items: center;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
 }
-.skills-title {
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  text-decoration:none;
-border-right: 2px solid white;
+.list-title {
+  border-bottom: 2px solid white;
+  font-size: 1.4rem;
+  margin: 5px auto;
+  width: fit-content;
 }
-.skills-list {
-display: flex;
-align-items: center;
-} 
-.skills-list ul li {
+.list ul {
+  margin: 0 0 0 2rem;
+}
+.list li {
   line-height: 2.5;
 }
 .technical-icons {
@@ -50,8 +54,8 @@ align-items: center;
 }
 .technical-icons * {
   margin: 0.5rem;
-  transition: .25s;
-  overflow:visible;
+  transition: 0.25s;
+  overflow: visible;
 }
 
 @keyframes slideUpSubHeading {
@@ -114,16 +118,18 @@ align-items: center;
   }
 } */
 
-.technical-single:hover{
+.technical-single:hover {
   transform: scale(1.3);
 }
 .rails-single * {
   margin: 0;
 }
-.skills-attributes {
 
-}
-
-.portfolio-growth {
-
+@media screen and (max-width: 700px) {
+  .portfolio-skills {
+    flex-direction: column;
+  }
+  .list {
+    max-width: 100%;
+  }
 }

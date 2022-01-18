@@ -26,7 +26,7 @@ const projects = [
     date: new Date("06-14-2021"),
     category: {
       tag: "Project",
-      color: "gold",
+      color: "red",
     },
     // featured: true,
     img: homeioV1,
@@ -43,7 +43,7 @@ const projects = [
     date: new Date("07-07-2021"),
     category: {
       tag: "Project",
-      color: "gold",
+      color: "red",
     },
     // featured: true,
     img: iNetwork,
@@ -60,7 +60,7 @@ const projects = [
     date: new Date("08-18-2021"),
     category: {
       tag: "Project",
-      color: "gold",
+      color: "red",
     },
     // featured: true,
     img: homeioV2,
@@ -77,7 +77,7 @@ const projects = [
     date: new Date("07-28-2021"),
     category: {
       tag: "Project",
-      color: "gold",
+      color: "red",
     },
     // featured: true,
     img: dignifiedWiners,
@@ -94,7 +94,7 @@ const projects = [
     date: new Date("01-06-2022"),
     category: {
       tag: "Project",
-      color: "gold",
+      color: "red",
     },
     // featured: true,
     // img: notAnotherTodoApp,
@@ -104,8 +104,8 @@ const projects = [
     title: "Bootcamper",
     link: {
       github: "https://github.com/yeezick/Bootcamper",
-      text: "website",
-      url: "https://github.com/yeezick/Bootcamper",
+      text: "Website",
+      url: null,
     },
   },
 ];
@@ -272,7 +272,7 @@ const sideWork = [
     // featured: true,
     img: embc,
     techs: "HTML & CSS",
-    text: "This file contains the HTML, & CSS for Erick Manrique's first & constantly evolving business card.",
+    text: "Before JavaScript, there was HTML and CSS. That's historically true and true for me too.",
     title: "E-Business Card",
     link: {
       github: "https://github.com/yeezick/emBusinessCard",
@@ -306,7 +306,7 @@ const sideWork = [
     // featured: true,
     img: firstPortfolio,
     techs: "HTML & CSS",
-    text: "My first portfolio site prior to enrolling into General Assembly, summarizing my progress from March to May of 2021.",
+    text: "After being recommended by a friend, I ambitiously created a portfolio showcasing 4 other, more amateur projects.",
     title: "First Portfolio",
     link: {
       github: "https://github.com/yeezick/firstPortfolio",
