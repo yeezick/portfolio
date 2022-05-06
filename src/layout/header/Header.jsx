@@ -59,7 +59,7 @@ const Header = () => {
           </Link>
           <a
             className="nav-link"
-            href="https://drive.google.com/file/d/1SssJSwm_AR1MCkRId8jzCILhBuifIcG4/view?usp=sharing"
+            href="https://docs.google.com/document/d/1g8NDyGHyGl2-6QS3X1DXBa2CCApWMQJnwUSBNb96tt8/edit?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
@@ -90,7 +90,7 @@ const Header = () => {
               </Link>
               <a
                 className="nav-link"
-                href="https://drive.google.com/file/d/1SssJSwm_AR1MCkRId8jzCILhBuifIcG4/view?usp=sharing"
+                href="https://docs.google.com/document/d/1g8NDyGHyGl2-6QS3X1DXBa2CCApWMQJnwUSBNb96tt8/edit?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
